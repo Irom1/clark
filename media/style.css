@@ -24,31 +24,40 @@ span.back {
   width:50px;
   height:50px;
   background-color: seagreen;
-  color: seagreen;
+  color: white;
   z-index: 333333333333;
   border-top-right-radius: 25px;
   cursor: pointer;
   transition: 0.5s width;
   overflow: hidden;
-  font-family: Arial !important;
-  font-size: 30pt;
+  font-family: arial !important;
   text-align: left;
-  border-top: 2px solid white;
-  border-right: 2px solid white;
+  box-sizing: border-box;
+  font-size: 20pt;
+  padding-top: 3px;
+  padding-left: 8px;
+  /*border-top: 2px solid white;
+  border-right: 2px solid white;*/
 }
 span.back.top {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 25px;
   top:0px !important;
-  border-top: none;
-  border-bottom: 2px solid white;
+  /*border-top: none;
+  border-bottom: 2px solid white;*/
 }
 span.back::after {
+  content: "⬅";
+}
+span.back:hover::after {
   content: "Go back home";
 }
 span.back:hover {
   width: 100%;
   color: white;
+  font-size: 25pt;
+  padding-top: 5px;
+  padding-left: 8px;
 }
 #installApp {
   display: none;

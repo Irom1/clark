@@ -1,4 +1,4 @@
-var version = 2.15;
+var version = 2.16;
 
 const staticZatoga = "zatoga-app-v2";
 const assets = [
@@ -82,4 +82,4 @@ self.addEventListener("fetch", fetchEvent => {
       return res || fetch(fetchEvent.request)
     })
   )
-}); 
+});
