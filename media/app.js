@@ -41,7 +41,7 @@ if(inApp) {
 }
 
 // Online only content
-if(onApp && navigator.onLine) {
+if(navigator.onLine) {
   var x = document.getElementsByClassName("online");
   for(i=0;i<x.length;i++) {
     x[i].style.display = "block";
@@ -58,6 +58,10 @@ if(onApp) {
   ];
   var message = document.getElementById("message");
   message.innerText = messages[Math.floor(Math.random() * messages.length)];
+  var games = [
+    {"name":"Doodle Jump","url":"/app/games/doodle-jump/"},
+    {"name":"2048 Game","url":"/app/games/2048.html"}
+  ];
 }
 
 // Tracker stuff
