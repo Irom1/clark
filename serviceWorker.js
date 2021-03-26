@@ -62,7 +62,7 @@ const assets = [
   "/app/games/tweety-bird/images/base.png",
   "/app/games/tweety-bird/images/bird.png",
   "/app/games/tweety-bird/images/button.png",
-  "/app/games/tweety-bird/images/fav-bird.png",
+  "/app/games/tweety-bird/images/fav-bird.ico",
   "/app/games/tweety-bird/images/pipe-green1.png",
   "/app/games/tweety-bird/images/pipe-green2.png",
   "/app/games/tweety-bird/index.html",
