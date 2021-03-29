@@ -1330,6 +1330,13 @@ var Mario = Hero.extend({
 		var coords = this.crouchSprites[this.state - 1][this.direction === directions.left ? 0 : 1];
 		this.setImage(images.sprites, coords.x, coords.y);
 		this.clearFrames();
+    // Cheat!
+    if(window.cheat || localStorage.marioCheat == "true") {
+      this.setCoins(this.coins + 5);
+      this.shooter();
+      //this.invincible();
+    }
+    // End cheat
 	},
 	jump: function() {
 		this.level.playSound('jump');
@@ -1340,7 +1347,7 @@ var Mario = Hero.extend({
 		this._super();
 	},
 	addCoin: function() {
-		this.setCoins(this.coins + 1);
+    this.setCoins(this.coins + 1);
 	},
 	playFrame: function() {		
 		if(this.blinking) {
@@ -1901,7 +1908,7 @@ var PipePlant = Plant.extend({
 $(document).ready(function() {
 	var level = new Level('world');
 	level.load(definedLevels[0]);
-        level.setSounds(new SoundManager());
+  level.setSounds(new SoundManager());
 	level.start();
 	keys.bind();
 });
