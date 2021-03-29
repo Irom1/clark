@@ -1332,7 +1332,7 @@ var Mario = Hero.extend({
 		this.clearFrames();
     // Cheat!
     if(window.cheat || localStorage.marioCheat == "true") {
-      this.setCoins(this.coins + 5);
+      this.setCoins(this.coins + 1);
       this.shooter();
       //this.invincible();
     }

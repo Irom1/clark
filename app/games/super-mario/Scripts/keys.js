@@ -1,4 +1,4 @@
-﻿/*
+/*
  * *****
  * WRITTEN BY FLORIAN RAPPL, 2012.
  * florian-rappl.de
