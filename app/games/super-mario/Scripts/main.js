@@ -178,6 +178,10 @@ var Level = Base.extend({
 		this.nextCycles = Math.floor(7000 / constants.interval);
 	},
 	nextLoad: function() {
+    // Reset powerup stuff for next level
+    window.powered = false;
+    window.alertOK = false;
+    // End reset stuff
 		if(this.nextCycles)
 			return;
 		
@@ -1335,9 +1339,32 @@ var Mario = Hero.extend({
       this.setCoins(this.coins + 1);
       this.shooter();
     }
-    if(window.skipLevel || localStorage.marioLevel == "true") {
-      this.level.nextLoad();
-      this.invincible();
+    // Powerups
+    if(localStorage.marioPowerUps && !window.powered) {
+      window.powered = true;
+      let powers = JSON.parse(localStorage.marioPowerUps);
+      if(powers["fire"]) {
+        this.shooter();
+      }
+      if(powers["life"]) {
+        this.addLife();
+      }
+      if(powers["invincible"]) {
+        this.invincible();
+      }
+      if(powers["level"]) {
+        this.level.nextLoad();
+      }
+    } else if(window.powered && !window.alertOK) {
+      window.alertOK = true;
+      setTimeout(function(){
+        alert("You can only use powerups once per level.");
+      },100);
+    } else if(!localStorage.marioPowerUps && !window.alertOK) {
+      window.alertOK = true;
+      setTimeout(function(){
+        alert("You need to choose powerup in the game menu before using one.");
+      },100);
     }
     // End cheat
 	},

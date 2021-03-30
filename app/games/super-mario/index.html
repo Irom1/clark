@@ -1,40 +1,23 @@
-<!doctype html>
-<html>
-<head>
-<meta charset=utf-8 />
-<title>Super Mario</title>
-<link href="Content/style.css" rel="stylesheet" />
-<link rel="stylesheet" href="/media/style.css" />
-<meta name="apple-mobile-web-app-status-bar" content="seagreen" />
-<meta name="theme-color" content="seagreen" />
-</head>
-<body>
-<span class="back" onclick="window.location.href='/app/';"></span>
-<script>
-  window.resizeTo(640, 480);
-  window.addEventListener('resize', () => {
-    window.resizeTo(640, 480);
-  });
-</script>
-<div id="game">
-<div id="world">
-</div>
-<div id="coinNumber" class="gauge">0</div>
-<div id="coin" class="gaugeSprite"></div>
-<div id="liveNumber" class="gauge">0</div>
-<div id="live" class="gaugeSprite"></div>
-</div>
-<script>window.jQuery || document.write('<script src="Scripts/jquery.js"><\/script>')</script>
-<script src="Scripts/testlevels.js"></script>
-<script src="Scripts/oop.js"></script>
-<script src="Scripts/keys.js"></script>
-<script src="Scripts/constants.js"></script>
-<script src="Scripts/sounds.js"></script>
-<script src="Scripts/main.js"></script>
-<!-- Game Musik -->
-<audio id="GameMusic" preload="auto" autoplay loop>
-    <source src="audio/Overworld.ogg" type="audio/ogg" />
-</audio>
-
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/media/style.css" />
+    <title>Zatoga - Super Mario</title>
+    <meta name="apple-mobile-web-app-status-bar" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body>
+    <h1 class="center">Super Mario</span></h1>
+    <img width="100%" src="game.png"/>
+    <a href="/app/games/super-mario/game.html">▶️ PLAY</a>
+    <p>The classic Super Mario game - brought to Zatoga. Use WASD or arrow keys to control. Use the CTRL key to move faster and the down arrow to activate powerups.</p><br>
+    <h3 class="small">Options:</h3><br>
+    <a href="/app/games/super-mario/power.html">Powerups</a><br>
+    <!--<a href="/app/games/super-mario/">Scoreboard</a><br>-->
+    <a href="/app/">Go back home</a><br>
+    <script src="/media/app.js"></script>
+  </body>
 </html>

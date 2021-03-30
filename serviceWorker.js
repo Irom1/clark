@@ -1,4 +1,4 @@
-var version = 2.23;
+var version = 2.24;
 
 const staticZatoga = "zatoga-app-v2";
 const assets = [
@@ -19,6 +19,9 @@ const assets = [
   "/app/games/2048.html",
   "/app/games/chrome-dino.html",
   "/app/games/super-mario/",
+  "/app/games/super-mario/game.png",
+  "/app/games/super-mario/game.html",
+  "/app/games/super-mario/power.html",
   "/app/games/super-mario/audio/theme/Sky.ogg",
   "/app/games/super-mario/audio/coin.ogg",
   "/app/games/super-mario/audio/die.ogg",

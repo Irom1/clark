@@ -52,7 +52,11 @@ if(navigator.onLine) {
 if(beta) {
   var x = document.getElementsByClassName("beta");
   for(i=0;i<x.length;i++) {
-    x[i].style.display = "block";
+    x[i].style.display = "inherit";
+  }
+  var x = document.getElementsByClassName("stable");
+  for(i=0;i<x.length;i++) {
+    x[i].style.display = "none";
   }
 }
 

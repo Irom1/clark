@@ -73,6 +73,9 @@ img.small {
 .small {
   display: inline;
 }
+.center {
+  text-align: center;
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);
