@@ -13,7 +13,7 @@ An offline PWA to easily get distracted with by:
 * **Fast (recommended): https://zato.ga**
 * Fast: https://zatoga.irom.ga/
 * Fast: https://zatoga.netlify.app/
-* Stable: htt   ps://zatoga.pages.dev/
+* Stable: https://zatoga.pages.dev/
 * Testing: https://zatoga.irom1.repl.co/
 
 ### Credits
