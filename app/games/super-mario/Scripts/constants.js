@@ -1,4 +1,4 @@
-﻿/*
+/*
  * *****
  * WRITTEN BY FLORIAN RAPPL, 2012.
  * florian-rappl.de
@@ -51,11 +51,11 @@ var images = {
 	peach   : BASEPATH + 'mario-peach.png',
 };
 var constants = {
-	interval        : 20,
+	interval        : 5 /*20*/,
 	bounce          : 15,
 	cooldown        : 20,
 	gravity         : 2,
-	start_lives     : 3,
+	start_lives     : 3 /*3*/,
 	max_width       : 400,
 	max_height      : 15,
 	jumping_v       : 27,
@@ -70,7 +70,7 @@ var constants = {
 	star_vx         : 4,
 	star_vy         : 16,
 	bullet_v        : 12,
-	max_coins       : 100,
+	max_coins       : 75 /*100*/,
 	pipeplant_count : 150,
 	pipeplant_v     : 1,
 	invincible      : 11000,
