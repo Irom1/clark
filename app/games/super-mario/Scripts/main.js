@@ -1353,6 +1353,8 @@ var Mario = Hero.extend({
         this.invincible();
       }
       if(powers["level"]) {
+        // Insure that you can play forever if testing
+        this.lifes = 1000;
         this.level.nextLoad();
       }
     } else if(window.powered && !window.alertOK) {
