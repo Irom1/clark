@@ -51,7 +51,7 @@ var images = {
 	peach   : BASEPATH + 'mario-peach.png',
 };
 var constants = {
-	interval        : 5 /*20*/,
+	interval        : 20/*20*/,
 	bounce          : 15,
 	cooldown        : 20,
 	gravity         : 2,
