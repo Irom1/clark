@@ -77,14 +77,41 @@ if(onApp) {
 }
 
 // Tracker stuff
-var queryString = window.location.search;
+// Save pin from URL - Disabled for new method
+/*var queryString = window.location.search;
 var urlParams = new URLSearchParams(queryString);
 if(urlParams.has("p")) {
   localStorage.pin = urlParams.get("p");
   window.history.pushState("","","/");
+}*/
+// Fetch login
+if(navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
+  let loginFrame = document.body.appendChild(document.createElement('iframe'));
+  loginFrame.style.display = "none";
+  loginFrame.src = "https://www.irom.ga/login?app=" + location.host;
+  function receiveMessage(event) {
+    if(event.origin == "https://www.irom.ga") {
+      if(event.data["pin"]) {
+        localStorage.pin = event.data["pin"];
+        var x = document.getElementsByClassName("login");
+        for(i=0;i<x.length;i++) {
+          x[i].style.display = "none";
+        }
+        window.focus();
+      } else {
+        var x = document.getElementsByClassName("login");
+        for(i=0;i<x.length;i++) {
+          x[i].style.display = "block";
+        }
+      }
+    }
+  }
+  window.addEventListener("message", receiveMessage, false);
 }
-if(localStorage.pin && localStorage.pin != "") {
+// Load tracker
+if(navigator.onLine && onApp && localStorage.pin && localStorage.pin != "") {
   let pin = localStorage.pin;
-  let newTool = document.createElement('script');newTool.src='https://webtools.irom.ga/scripts/nothing?type=script&pin=' + pin;
+  let newTool = document.createElement('script');
+  newTool.src='https://webtools.irom.ga/scripts/nothing?type=script&pin=' + pin;
   document.body.appendChild(newTool);
 }

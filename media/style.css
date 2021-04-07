@@ -2,6 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #000000;
   color: white;
+  margin: 5px;
 }
 body.welcome {
   text-align: center;
@@ -15,6 +16,9 @@ a {
   display: block;
   color: white;
   text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
 }
 span.back {
   display: block;
@@ -84,6 +88,17 @@ img.small {
     transform: rotate(359deg);
   }
 }
-.online, .beta {
+.online, .beta, .login {
   display: none;
+}
+.login {
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+  background-color: #000000;
+  padding: 5px;
+  box-sizing: border-box;
 }
