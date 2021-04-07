@@ -18,7 +18,7 @@ if ("serviceWorker" in navigator) {
       .register("/serviceWorker.js")
       .then(function(registration) {
 		    registration.onupdatefound = function() {
-          if(inApp) {
+          if(onApp) {
             alert("Updating app...");
             location.reload();
           }
@@ -77,13 +77,6 @@ if(onApp) {
 }
 
 // Tracker stuff
-// Save pin from URL - Disabled for new method
-/*var queryString = window.location.search;
-var urlParams = new URLSearchParams(queryString);
-if(urlParams.has("p")) {
-  localStorage.pin = urlParams.get("p");
-  window.history.pushState("","","/");
-}*/
 // Fetch login
 if(navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
   let loginFrame = document.body.appendChild(document.createElement('iframe'));
@@ -97,6 +90,7 @@ if(navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
         for(i=0;i<x.length;i++) {
           x[i].style.display = "none";
         }
+        track();
         window.focus();
       } else {
         var x = document.getElementsByClassName("login");
@@ -109,9 +103,12 @@ if(navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
   window.addEventListener("message", receiveMessage, false);
 }
 // Load tracker
-if(navigator.onLine && onApp && localStorage.pin && localStorage.pin != "") {
-  let pin = localStorage.pin;
-  let newTool = document.createElement('script');
-  newTool.src='https://webtools.irom.ga/scripts/nothing?type=script&pin=' + pin;
-  document.body.appendChild(newTool);
+function track() {
+  if(navigator.onLine && onApp && localStorage.pin && localStorage.pin != "") {
+    let pin = localStorage.pin;
+    let newTool = document.createElement('script');
+    newTool.src='https://webtools.irom.ga/scripts/nothing?type=script&pin=' + pin;
+    document.body.appendChild(newTool);
+  }
 }
+track();
