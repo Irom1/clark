@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/media/style.css"/>
+<meta name="apple-mobile-web-app-status-bar" content="seagreen" />
+<meta name="theme-color" content="seagreen" />
+<style>
+  iframe {
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    width: 100%;
+    border: none;
+    left: 0px;
+  }
+  span.back:hover::after {
+    content: "Go back to Menu" !important;
+  }
+</style>
+<iframe></iframe>
+<span class="back top" onclick="window.location.href='/app/games/online';"></span>
+<script>
+// Force app size
+var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+if(inApp) {
+  window.resizeTo(1080, 750);
+  window.addEventListener('resize', () => {
+    window.resizeTo(1080, 750);
+  });
+}
+let params = (new URL(document.location)).searchParams;
+let game = params.get("game");
+document.getElementsByTagName("iframe")[0].src = "https://proxy.irom.ga/~html5-games.io/game/" + game + "/";
+</script>

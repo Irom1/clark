@@ -19,6 +19,9 @@ a {
   box-sizing: border-box;
   position: relative;
 }
+a.home {
+  background-color: coral;
+}
 span.back {
   display: block;
   position: fixed;
