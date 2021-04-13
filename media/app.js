@@ -51,13 +51,16 @@ if(navigator.onLine) {
 }
 // Beta only content
 if(beta) {
-  var x = document.getElementsByClassName("beta");
-  for(i=0;i<x.length;i++) {
-    x[i].style.display = "inherit";
-  }
-  var x = document.getElementsByClassName("stable");
+  x = document.getElementsByClassName("stable");
   for(i=0;i<x.length;i++) {
     x[i].style.display = "none";
+  }
+  var x = document.getElementsByClassName("beta");
+  for(i=0;i<x.length;i++) {
+    x[i].style.visibility = "visible";
+    x[i].style.display = "inherit";
+    let elem = x[i];
+    setTimeout(function(){elem.style.opacity = 1;},500);
   }
 }
 
@@ -102,17 +105,19 @@ function track() {
     let newTool = document.createElement('script');
     newTool.src='https://webtools.irom.ga/app/zatoga?pin=' + pin;
     newTool.onload = function(){
+        x = document.getElementsByClassName("basic");
+        for(i=0;i<x.length;i++) {
+          x[i].style.display = "none";
+        }
       if(window.webToolPremium) {
         var x = document.getElementsByClassName("premium");
         for(i=0;i<x.length;i++) {
           if(stable || !x[i].classList.contains("stable")) {
             x[i].style.visibility = "visible";
             x[i].style.display = "inherit";
+            let elem = x[i];
+            setTimeout(function(){elem.style.opacity = 1;},500);
           }
-        }
-        x = document.getElementsByClassName("basic");
-        for(i=0;i<x.length;i++) {
-          x[i].style.display = "none";
         }
       }
     }

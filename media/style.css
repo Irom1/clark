@@ -99,6 +99,7 @@ img.center {
 }
 .basic {
   color: green;
+  transition: 0.5s opacity;
 }
 .beta {
   color: red;
@@ -106,17 +107,18 @@ img.center {
 .premium {
   color: deepskyblue;
 }
-.loading .center .basic {
-  display: block;
-}
 /*.beta, .premium, .login {
   display: none;
 }*/
 .shaddow {
   visibility: hidden;
+  transition: 0.5s opacity;
+  opacity: 0;
 }
 .hide {
   display: none;
+  transition: 0.5s opacity;
+  opacity: 0;
 }
 .online, .share {
   visibility: hidden;
