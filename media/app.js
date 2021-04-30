@@ -105,11 +105,15 @@ function track() {
     let newTool = document.createElement('script');
     newTool.src='https://webtools.irom.ga/app/zatoga?pin=' + pin;
     newTool.onload = function(){
+      if(!window.webToolPinValid) {
+        localStorage.pin = null;
+        location.reload();
+      }
+      if(window.webToolPremium) {
         x = document.getElementsByClassName("basic");
         for(i=0;i<x.length;i++) {
           x[i].style.display = "none";
         }
-      if(window.webToolPremium) {
         var x = document.getElementsByClassName("premium");
         for(i=0;i<x.length;i++) {
           if(stable || !x[i].classList.contains("stable")) {
