@@ -136,12 +136,12 @@ function loaded() {
     setTimeout(function(){elem.style.display="none";},2500);
   }
 }
-if((localStorage.pin && localStorage.pin != "") || !navigator.onLine) {
+if((localStorage.pin && localStorage.pin != "" && localStorage.pin != null && localStorage.pin != "null") || !navigator.onLine) {
   track();
   if(onApp) {
     loaded();
   }
-} else if(onApp && navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
+} else if(onApp && navigator.onLine && (!localStorage.pin || localStorage.pin == "" || localStorage.pin == null || localStorage.pin == "null")) {
   // Get login
   let loginFrame = document.body.appendChild(document.createElement('iframe'));
   loginFrame.style.display = "none";
