@@ -119,7 +119,7 @@ function track() {
     newTool.src='https://webtools.irom.ga/app/zatoga?pin=' + pin;
     newTool.onload = function(){
       if(!window.webToolPinValid) {
-        localStorage.pin = null;
+        localStorage.pin = "";
         location.reload();
       }
       if(window.webToolPremium) {
@@ -149,12 +149,13 @@ function loaded() {
     setTimeout(function(){elem.style.display="none";},2500);
   }
 }
-if(!navigator.onLine) {
+if(!navigator.onLine || (localStorage.pin && localStorage.pin != "") {
   // Let users not be tracked if offline
   if(onApp) {
     loaded();
+    track();
   }
-} else if(onApp && navigator.onLine && (!localStorage.pin || localStorage.pin == "" || localStorage.pin == null || localStorage.pin == "null")) {
+} else if(onApp && navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
   // Get login
   let loginFrame = document.body.appendChild(document.createElement('iframe'));
   loginFrame.style.display = "none";
