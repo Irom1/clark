@@ -106,7 +106,7 @@ if(navigator.share) {
         url: 'https://zato.ga/'
       }).then(() => {
         //console.log('Thanks for sharing!');
-      }).catch(console.error);
+      }).catch(alert);
     });
   }
 }
@@ -153,8 +153,8 @@ if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
   // Let users in they are already logged in or offline 
   if(onApp) {
     loaded();
-    track();
   }
+  track();
 } else if(onApp && navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
   // Get login
   let loginFrame = document.body.appendChild(document.createElement('iframe'));
