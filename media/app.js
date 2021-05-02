@@ -149,8 +149,8 @@ function loaded() {
     setTimeout(function(){elem.style.display="none";},2500);
   }
 }
-if((localStorage.pin && localStorage.pin != "" && localStorage.pin != null && localStorage.pin != "null") || !navigator.onLine) {
-  track();
+if(!navigator.onLine) {
+  // Let users not be tracked if offline
   if(onApp) {
     loaded();
   }
@@ -167,15 +167,15 @@ if((localStorage.pin && localStorage.pin != "" && localStorage.pin != null && lo
         for(i=0;i<x.length;i++) {
           x[i].style.display = "none";
         }
+        track();
         window.focus();
         loaded();
-        track();
       } else {
-        loaded();
         var x = document.getElementsByClassName("login");
         for(i=0;i<x.length;i++) {
           x[i].style.display = "block";
         }
+        loaded();
       }
     }
   }
