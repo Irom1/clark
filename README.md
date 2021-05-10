@@ -1,4 +1,4 @@
-# zatoga
+# Zatoga
 An offline PWA to easily get distracted with by:
 * Playing Games such as: 
   * Doodle Jump
