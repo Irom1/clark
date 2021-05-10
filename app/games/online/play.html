@@ -1,6 +1,8 @@
-<link rel="stylesheet" href="/media/style.css"/>
-<meta name="apple-mobile-web-app-status-bar" content="seagreen" />
-<meta name="theme-color" content="seagreen" />
+<head>
+  <link rel="stylesheet" href="/media/style.css"/>
+  <meta name="apple-mobile-web-app-status-bar" content="seagreen" />
+  <meta name="theme-color" content="seagreen" />
+  <script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
 <style>
   iframe {
     position: fixed;
@@ -14,6 +16,8 @@
     content: "Go back to Menu" !important;
   }
 </style>
+</head>
+<body>
 <iframe></iframe>
 <span class="back top" onclick="window.location.href='/app/games/online';"></span>
 <script>
@@ -31,3 +35,4 @@ game = game.toLowerCase().replace(/ /g, "-");
 document.getElementsByTagName("iframe")[0].src = "https://proxy.irom.ga/~html5-games.io/game/" + game + "/";
 </script>
 <script src="/media/app.js"></script>
+</body>
