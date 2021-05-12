@@ -47,6 +47,9 @@ if(navigator.onLine) {
   var x = document.getElementsByClassName("online");
   for(i=0;i<x.length;i++) {
     x[i].style.visibility = "visible";
+    x[i].style.display = "inherit";
+    let elem = x[i];
+    setTimeout(function(){elem.style.opacity = 1;},500);
   }
 // Offline only content
 } else {
