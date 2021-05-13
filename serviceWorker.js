@@ -1,6 +1,6 @@
 importScripts('https://arc.io/arc-sw-core.js')
 
-var version = 2.83;
+var version = 2.84;
 
 const staticZatoga = "zatoga-app-v2";
 const assets = [
@@ -15,6 +15,8 @@ const assets = [
   "/media/loading.gif",
   "/media/blocked.png",
   "/favicon.ico",
+  "/app/premium/",
+  "/app/premium/view.html",
   "/app/games/doodle-jump/",
   "/app/games/doodle-jump/background.png",
   "/app/games/doodle-jump/border.png",

@@ -46,6 +46,7 @@ if(inApp && onApp) {
 if(navigator.onLine) {
   var x = document.getElementsByClassName("online");
   for(i=0;i<x.length;i++) {
+    x[i].classList.remove("disabled");
     x[i].style.visibility = "visible";
     x[i].style.display = "inherit";
     let elem = x[i];
@@ -59,6 +60,7 @@ if(navigator.onLine) {
   }
   var x = document.getElementsByClassName("offline");
   for(i=0;i<x.length;i++) {
+    x[i].classList.remove("disabled");
     x[i].style.visibility = "visible";
     x[i].style.display = "inherit";
     let elem = x[i];
@@ -73,6 +75,7 @@ if(beta) {
   }
   var x = document.getElementsByClassName("beta");
   for(i=0;i<x.length;i++) {
+    x[i].classList.remove("disabled");
     x[i].style.visibility = "visible";
     x[i].style.display = "inherit";
     let elem = x[i];
@@ -136,6 +139,7 @@ function track() {
         var x = document.getElementsByClassName("premium");
         for(i=0;i<x.length;i++) {
           if(stable || !x[i].classList.contains("stable")) {
+            x[i].classList.remove("disabled");
             x[i].style.visibility = "visible";
             x[i].style.display = "inherit";
             let elem = x[i];
