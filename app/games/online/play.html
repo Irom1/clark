@@ -33,7 +33,7 @@ if(inApp) {
 let params = (new URL(document.location)).searchParams;
 let game = params.get("game");
 game = game.toLowerCase().replace(/ /g, "-");
-document.getElementsByTagName("iframe")[0].src = "https://proxy.irom.ga/~html5-games.io/game/" + game + "/";
+document.getElementById("gameFrame").src = "https://proxy.irom1.repl.co/~html5-games.io/game/" + game + "/";
 (async function() {
   let x = await fetch("https://html5-games.io/site-checker?site=html5-games.io");
   if(x) {
