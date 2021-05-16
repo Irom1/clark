@@ -2,4 +2,20 @@ Website for making maskable icons: https://maskable.app/editor
 
 for some reason you need to put <script> tags for the main script @ the end
 
-fonts.googleapis.com for fonts
+
+For any game to work offline:
+--> Add it to the offline games folder (/app/games/offline/somegame.html)
+--> Add a link to the game in /app/games/offline/index.html
+--> add a line to the array in serviceWorker.js with the game path
+--> add the following lines of code in the the game HTML:
+----> In head:
+<link rel="stylesheet" href="/media/style.css"/>
+<meta name="apple-mobile-web-app-status-bar" content="seagreen" />
+<meta name="theme-color" content="seagreen" />
+<script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
+----> In body:
+<span class="back top" onclick="window.location.href='/app/games/offline/';"></span>
+<script src="/media/index.js"></script>
+--> Add source for game in README.md
+--> Test the app @ zatoga.irom1.repl.co
+--> Push commit in replit
