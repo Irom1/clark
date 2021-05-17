@@ -88,7 +88,7 @@ if(onApp) {
   var messages = [
     "There is plenty of time to get stuff done later - why don't you play some games now?",
     "Ready to get distracted...?",
-    "Games, anyone?",
+    "You know it's time to play fun games...",
     "Why do work when you can play?"
   ];
   var message = document.getElementById("message");
@@ -107,8 +107,8 @@ if(navigator.share) {
     x[i].style.visibility = "visible";
     x[i].addEventListener('click', event => {
       navigator.share({
-        title: 'ZatogaApp',
-        text: 'Install the PWA on any device and easily get distracted!',
+        title: 'Zatoga',
+        text: 'Install the PWA on any device and play games and get distracted!',
         url: 'https://zato.ga/'
       }).then(() => {
         //console.log('Thanks for sharing!');
