@@ -36,9 +36,9 @@ window.addEventListener('appinstalled', () => {
 
 // Force app size
 if(inApp && onApp) {
-  window.resizeTo(422, 584);
+  window.resizeTo(440, 590);
   window.addEventListener('resize', () => {
-    window.resizeTo(422, 584);
+    window.resizeTo(440, 590);
   });
 }
 
