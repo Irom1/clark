@@ -1,6 +1,6 @@
 // Know if in the app
 var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-var onApp = (location.pathname == "/app/");
+var onApp = (location.pathname == "/app/" || location.pathname == "/app/list.html");
 var beta = (location.host == "zatoga.irom1.repl.co");
 let stable = !beta;
 
@@ -39,23 +39,27 @@ window.addEventListener('appinstalled', () => {
 function resize(width,height,always) {
   var insideApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   if(insideApp) {
-    window.resizeTo(width, height);
-    setTimeout(function(){
-      window.resizeTo(2 * width - window.innerWidth, height + height - window.innerHeight);
-    },200);
+    window.resizing = true;
+    window.resizeTo(width + window.outerWidth - window.innerWidth, height + window.outerHeight - window.outerHeight);
+    window.resizing = false;
   }
   if(always) {
     window.addEventListener('resize', () => {
-      window.resizeTo(width, height);
-      setTimeout(function(){
-        window.resizeTo(2 * width - window.innerWidth, height + height - window.innerHeight);
-      },200);
+      if(!window.resizing) {
+        window.resizing = true;
+        //setTimeout(function(){
+          window.resizeTo(width + window.outerWidth - window.innerWidth, height + window.outerHeight - window.outerHeight);
+        //},100);
+        setTimeout(function(){
+          window.resizing = false;
+        },20);
+      }
     });
   }
 }
 // Force app size on homepage
 if(onApp) {
-  resize(440, 570);
+  resize(440, 590, true);
 }
 
 // Online only content
@@ -109,11 +113,6 @@ if(onApp) {
   ];
   var message = document.getElementById("message");
   message.innerText = messages[Math.floor(Math.random() * messages.length)];
-  // Prep for v3
-  /*var games = [
-    {"name":"Doodle Jump","url":"/app/games/doodle-jump/"},
-    {"name":"2048 Game","url":"/app/games/2048.html"}
-  ];*/
 }
 
 // Sharing stuff
@@ -174,6 +173,7 @@ function loaded() {
     setTimeout(function(){elem.style.opacity = "0";},1500);
     setTimeout(function(){elem.style.display="none";},2500);
   }
+  setTimeout(function(){document.body.style.overflow="auto";},2500);
 }
 if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
   // Let users in & track them they are already logged in or offline 

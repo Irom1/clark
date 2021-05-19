@@ -19,6 +19,19 @@ a {
   box-sizing: border-box;
   position: relative;
 }
+a.mini {
+  display: inline-block;
+  width: auto;
+}
+a.mini:hover {
+  background-color: #267347;
+}
+a.mini.gray {
+  background-color: #333333;
+}
+a.mini.gray:hover {
+  background-color: #222222;
+}
 a.home {
   background-color: coral;
 }

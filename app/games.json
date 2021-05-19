@@ -1,0 +1,32 @@
+{
+  "Goat Game":{
+    "name":"Goat Game",
+    "service":"y8",
+    "premium":false
+  },
+  "Goater Game":{
+    "name":"Goater Game",
+    "service":"y8",
+    "premium":false
+  },
+  "Goat Game 2":{
+    "name":"Goat Game 2",
+    "service":"offline",
+    "premium":true
+  },
+  "Goat Game 3":{
+    "name":"Goat Game 3",
+    "service":"offline",
+    "premium":false
+  },
+  "Goat Game 4":{
+    "name":"Goat Game 4",
+    "service":"offline",
+    "premium":false
+  },
+  "Goat Game 5":{
+    "name":"Goat Game 5",
+    "service":"offline",
+    "premium":false
+  }
+}

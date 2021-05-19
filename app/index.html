@@ -35,10 +35,27 @@ font-size: 15px;
 }
 </style>
 <center>
+  <style>
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+</style>
     <br>
     <h4 class="small" id="message">More Options</h4><br><br>
-    <a class="dm" href="/app/info.html">Info</a> <br>   <a class="dm" href="/app/updateinfo.html">Update Zatoga</a> 
-    </center>
+    <button class="dm" onclick="location.href='/app/info.html';">Info</button> <button class="dm" onClick="window.location.href='/app/updateinfo.html';">Update Zatoga</button> 
+    <button class="dm" onclick="location.href='/app/howtopremium.html';">Get Premium for Free!</button>
+    <!--<button class="dm beta" onclick="location.href='/app/list.html';">GameList BETA</button> -->   </center>
     <span class="login">
       <img class="rotate small" src="/media/icon.png"/>
       <h1 class="small">Zatoga <span class="stable basic online">v3.9</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br>
