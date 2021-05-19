@@ -11,10 +11,21 @@
     <script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
   </head>
   <body>
+    <script>
+      // Force app size
+var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+if(inApp) {
+  window.resizeTo(440, 590);
+  window.addEventListener('resize', () => {
+    window.resizeTo(440, 590);
+  });
+}
+</script>
+
     <center>
    <h1>404</h1>
     <b><span>Page Not Found</span></b>
-    <h4>Sorry, the page you are looking for doesn't exist.</h4>
+    <h4>Sorry, the page you are looking for unfortunately doesn't exist.</h4>
 
  <br><br><br><br><br><br><br><br><br>
     <a href="/app/" class="home">Go back Home</a>

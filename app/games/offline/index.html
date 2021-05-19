@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=440, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/media/style.css" />
     <title>Zatoga</title>
@@ -14,6 +14,16 @@
     <script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
   </head>
   <body>
+    <script>
+      // Force app size
+var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+if(inApp) {
+  window.resizeTo(440, 590);
+  window.addEventListener('resize', () => {
+    window.resizeTo(440, 590);
+  });
+}
+</script>
     <h1 class="center">Zatoga - Offline Games</h1>
     <h3>These games will work whenever - even if you are offline!</h3><br>
     <a href="/app/games/offline/mcjs.html">Minecraft-JS (New!)</a><br>

@@ -21,25 +21,47 @@
 <iframe id="gameFrame"></iframe>
 <span class="back top" onclick="window.location.href='/app/games/online';"></span>
 <script>
-// Force app size
-var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-if(inApp) {
-  window.resizeTo(1080, 750);
-  // Allow custom resizing afterward
-  /*window.addEventListener('resize', () => {
-    window.resizeTo(1080, 750);
-  });*/
+// Force app size - function to be added to app.js eventually
+function resize(width,height,always) {
+  var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  if(inApp) {
+    window.resizeTo(width, height);
+    setTimeout(function(){
+      window.resizeTo(2 * width - window.innerWidth, height + height - window.innerHeight);
+    },200);
+  }
+  if(always) {
+    window.addEventListener('resize', () => {
+      window.resizeTo(width, height);
+    });
+  }
 }
 let params = (new URL(document.location)).searchParams;
 let game = params.get("game");
 game = game.toLowerCase().replace(/ /g, "-");
-document.getElementById("gameFrame").src = "https://proxy.irom1.repl.co/~html5-games.io/game/" + game + "/";
-(async function() {
-  let x = await fetch("https://html5-games.io/site-checker?site=html5-games.io");
-  if(x) {
-    document.getElementById("gameFrame").src = "https://html5-games.io/game/" + game + "/";
+let externalGames = {
+  "slope":{
+    "url":"https://theduy.herokuapp.com/web/_aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbQ==_/y8-studio/unity/joll/slope/",
+    "width":900,
+    "height":640
   }
-})();
+}
+if(externalGames[game] && externalGames[game]["width"] && externalGames[game]["height"]) {
+  resize(externalGames[game]["width"], externalGames[game]["height"]);
+} else {
+  resize(1080, 750);
+}
+if(externalGames[game] && externalGames[game]["url"]) {
+  document.getElementById("gameFrame").src = externalGames[game]["url"];
+} else {
+  document.getElementById("gameFrame").src = "https://proxy.irom1.repl.co/~html5-games.io/game/" + game + "/";
+  (async function() {
+    let x = await fetch("https://html5-games.io/site-checker?site=html5-games.io");
+    if(x) {
+      document.getElementById("gameFrame").src = "https://html5-games.io/game/" + game + "/";
+    }
+  })();
+}
 </script>
 <script src="/media/app.js"></script>
 </body>

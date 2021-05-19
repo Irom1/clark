@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=440, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Zatoga - Info</title>
     <link rel="stylesheet" href="/media/style.css"/>
@@ -11,6 +11,16 @@
     <meta name="theme-color" content="#000000" />
   </head>
   <body>
+    <script>
+      // Force app size
+var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+if(inApp) {
+  window.resizeTo(440, 590);
+  window.addEventListener('resize', () => {
+    window.resizeTo(440, 590);
+  });
+}
+</script>
     <img class="rotate small" src="/media/icon.png"/>
     <h1 class="small">Zatoga - Info</span></h1><br>
     <center><p>Zatoga - Made by students, for students.</p><span>Zatoga was independently created by @Irom1, @Retrospicer, and others.</span></center><br><br>

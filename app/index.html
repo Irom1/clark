@@ -14,8 +14,18 @@
     <script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
   </head>
   <body>
+    <script>
+      // Force app size
+var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+if(inApp) {
+  window.resizeTo(440, 590);
+  window.addEventListener('resize', () => {
+    window.resizeTo(440, 590);
+  });
+}
+</script>
     <img class="rotate small" src="/media/icon.png"/>
-    <h1 class="small">Zatoga <span class="stable basic online">v3.8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="stable premium hide">Premium </span><span class="stable offline hide">Offline </span><span class="beta hide">Beta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h1>&nbsp;&nbsp;&nbsp; <a class="button i" style="background-color:red;color:black;" href='/app/logout.html'>Logout</a>&nbsp;<br><br>
+    <h1 class="small">Zatoga <span class="stable basic online">v3.9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="stable premium hide">Premium </span><span class="stable offline hide">Offline </span><span class="beta hide">Beta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h1>&nbsp;&nbsp;&nbsp; <a class="button i" style="background-color:red;color:black;" href='/app/logout.html'>Logout</a>&nbsp;<br><br>
     <h3 class="small" id="message"></h3><br><br>
     <a href="/app/games/offline/">Offline Games</a><br>
     <a class="online disabled" href="/app/games/online/">Online Games</a><br>
@@ -41,12 +51,12 @@ font-size: 15px;
     </center>
     <span class="login">
       <img class="rotate small" src="/media/icon.png"/>
-      <h1 class="small">Zatoga <span class="stable basic online">v3.8</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br>
+      <h1 class="small">Zatoga <span class="stable basic online">v3.9</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br>
       <h3 class="small">Please log in to continue to Zatoga.</h3><br><br>
       <a onclick="window.open('https://www.irom.ga/login?app=' + location.host)">Log in/Sign up</a>
     </span>
     <span class="loading">
-      <h1 class="center">Zatoga <span class="stable basic online">v3.8</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br><br><br>
+      <h1 class="center">Zatoga <span class="stable basic online">v3.9</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br><br><br>
       <img class="rotate fast center" src="/media/icon.png"/>
       <!--<img class="center" src="/media/loading.gif"/><br><br>-->
       <br><br><br><br><br><br>

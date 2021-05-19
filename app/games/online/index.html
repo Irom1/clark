@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=440, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/media/style.css" />
     <title>Zatoga - Online Games</title>
@@ -11,6 +11,16 @@
     <script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
   </head>
   <body>
+    <script>
+      // Force app size
+var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+if(inApp) {
+  window.resizeTo(440, 590);
+  window.addEventListener('resize', () => {
+    window.resizeTo(440, 590);
+  });
+}
+</script>
     <h1 class="center">Online Games</h1>
     <p>These games don't work offline but will always be availible in the app. If any games ask you to login - don't try to - it won't work.<!--<br><br>For some reason they only work on certain devices and take some time to load. You know your device isn't compatible if you get a "game locked" message upon opening.</p>
     <p>You can also view a few more games/services in the premium collection:--></p>
