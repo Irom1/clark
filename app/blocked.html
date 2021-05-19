@@ -23,16 +23,6 @@
    <script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
   </head>
   <body>
-    <script>
-      // Force app size
-var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-if(inApp) {
-  window.resizeTo(440, 590);
-  window.addEventListener('resize', () => {
-    window.resizeTo(440, 590);
-  });
-}
-</script>
     <br><br>
     <img class="center" src="/media/blocked.png"/>
     <h2 class="center">Your account has been blocked.</h2>
@@ -41,15 +31,9 @@ if(inApp) {
     <p>*Inappropriate use includes signing up with fake account information (signing up with a <span>fake name, email, or school/work email</span>), misusing our services or reporting Zatoga.</p></p>
     <p>Please email us at support@irom.ga if you think this is a mistake.</p>
     <a style="background-color:black;color:white;" href='/app/logout.html'>Login with a valid account</a>
-    <script>
-      var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-      if(inApp) {
-        window.resizeTo(422, 584);
-        window.addEventListener('resize', () => {
-          window.resizeTo(422, 584);
-        });
-      }
-    </script>
     <script src="/media/app.js"></script>
+    <script>
+      resize(440, 570);
+    </script>
   </body>
 </html>
