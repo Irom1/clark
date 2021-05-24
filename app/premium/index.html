@@ -24,28 +24,9 @@
 
 
     <a href="/app/" class="home">Go back home</a>
-    <script>
-      var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-      if(inApp) {
-        window.resizeTo(422, 584);
-        window.addEventListener('resize', () => {
-          window.resizeTo(422, 584);
-        });
-      }
-    </script>
-  <!--<script>
-      // Force app size
-var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-if(inApp) {
-  window.resizeTo(440, 590);
-  window.addEventListener('resize', () => {
-    window.resizeTo(440, 590);
-  });
-}
-</script>-->
+    <script src="/media/app.js"></script>
   <script>
     resize(422, 539);
   </script>
-    <script src="/media/app.js"></script>
   </body>
 </html>
