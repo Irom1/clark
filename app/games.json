@@ -122,6 +122,24 @@
     "height":640,
     "mobile":false
   },
+    "Paper-io": {
+    "name": "Paper-io",
+    "service": "custom",
+    "premium": false,
+    "url":"https://apwebsurf.herokuapp.com/web/_aHR0cHM6Ly9wYXBlci1pby5jb20=_/",
+    "width":900,
+    "height":700,
+    "mobile":false
+  },
+    "Crossy Road": {
+    "name": "Crossy Road",
+    "service": "custom",
+    "premium": false,
+    "url":"https://apwebsurf.herokuapp.com/web/_aHR0cHM6Ly9jcm9zc3ktcm9hZC5nbGl0Y2gubWU=_/",
+    "width":900,
+    "height":700,
+    "mobile":false
+    },
   "Super Mario": {
     "name": "Super Mario",
     "service": "offline",
@@ -142,5 +160,12 @@
     "service": "html5-games",
     "premium": true,
     "mobile": true
+  },
+  "Vex 4": {
+    "name": "Vex 4",
+    "service": "y8",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbQ==_/rvvASMiM/80e6a5ae477f4d4fbcd1ea293d10087d/%3Fgd_zone_config%3DeyJwYXJlbnRVUkwiOiJodHRwczovL2tpemkuY29tLyIsInBhcmVudERvbWFpbiI6ImtpemkuY29tIiwidG9wRG9tYWluIjoia2l6aS5jb20iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS4yLjgifQ%253D%253D",
+    "mobile":false,
+    "premium":false
   }
 }
