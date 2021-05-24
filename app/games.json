@@ -107,6 +107,12 @@
     "width": 450,
     "height": 730
   },
+    "Basketball Stars": {
+    "name": "Basketball Stars",
+    "service": "html5-games",
+    "premium": true,
+    "mobile": false
+  },
   "Slope": {
     "name": "Slope",
     "service": "y8",
@@ -130,12 +136,6 @@
     "width":900,
     "height":700,
     "mobile":false
-  },
-  "Basketball Stars": {
-    "name": "Basketball Stars",
-    "service": "html5-games",
-    "premium": true,
-    "mobile": false
   },
   "Jetpack Joyride": {
     "name": "Jetpack Joyride",
