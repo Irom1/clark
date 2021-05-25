@@ -19,3 +19,5 @@ For any game to work offline:
 --> Add source for game in README.md
 --> Test the app @ zatoga.irom1.repl.co
 --> Push commit in replit
+
+Stickman Hook: http://theduy.herokuapp.com/web/_aHR0cHM6Ly9zdGlja21hbmhvb2suaW8=_/stickman-hook.embed
