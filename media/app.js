@@ -1,3 +1,4 @@
+
 // Know if in the app
 var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 var onApp = (location.pathname == "/app/" || location.pathname == "/app/list.html");
@@ -21,7 +22,7 @@ if ("serviceWorker" in navigator) {
       .then(function(registration) {
 		    registration.onupdatefound = function() {
           if(inApp) {
-            alert("Updating app...");
+            alert("Updating Zatoga...");
             location.reload();
           }
 		    }

@@ -155,6 +155,7 @@
     "height":700,
     "mobile":false
   },
+
     "Vex 4": {
     "name": "Vex 4",
     "service": "custom",
@@ -164,10 +165,11 @@
     "mobile":false,
     "premium":false
   },
+
   "Jetpack Joyride": {
     "name": "Jetpack Joyride",
     "service": "html5-games",
-    "premium": true,
+    "premium": false,
     "mobile": true
   }
 }
