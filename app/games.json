@@ -21,7 +21,7 @@
     "premium": false,
     "mobile": true
   },
-    "Blob Tank Wars": {
+  "Blob Tank Wars": {
     "name": "Blob Tank Wars",
     "service": "html5-games",
     "premium": false
@@ -38,7 +38,7 @@
     "premium": false,
     "mobile": true
   },
-    "Fireboy and Watergirl 5": {
+  "Fireboy and Watergirl 5": {
     "name": "Fireboy and Watergirl 5",
     "service": "html5-games",
     "premium": false
@@ -94,21 +94,21 @@
     "service": "html5-games",
     "premium": false
   },
-    "Super Bowmasters": {
+  "Super Bowmasters": {
     "name": "Super Bowmasters",
     "service": "html5-games",
     "premium": false,
     "mobile": false
   },
-    "Surviv-io": {
+  "Surviv-io": {
     "name": "Surviv-io",
     "service": "custom",
     "premium": false,
-    "url":"https://ztgpro.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
-    "width":900,
-    "height":900,
-    "mobile":false
-    },
+    "url": "https://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
+    "width": 900,
+    "height": 900,
+    "mobile": false
+  },
   "Perfect Dunk": {
     "name": "Perfect Dunk",
     "service": "html5-games",
@@ -132,7 +132,7 @@
     "width": 450,
     "height": 730
   },
-    "Basketball Stars": {
+  "Basketball Stars": {
     "name": "Basketball Stars",
     "service": "html5-games",
     "premium": true,
@@ -142,59 +142,75 @@
     "name": "Slope",
     "service": "y8",
     "premium": false,
-    "url":"https://theduy.herokuapp.com/web/_aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbQ==_/y8-studio/unity/joll/slope/",
-    "width":900,
-    "height":640,
-    "mobile":false
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbQ==_/y8-studio/unity/joll/slope/",
+    "width": 900,
+    "height": 640,
+    "mobile": false
   },
-    "Crossy Road": {
+  "Crossy Road": {
     "name": "Crossy Road",
     "service": "custom",
     "premium": false,
-    "url":"https://apwebsurf.herokuapp.com/web/_aHR0cHM6Ly9jcm9zc3ktcm9hZC5nbGl0Y2gubWU=_/",
-    "width":900,
-    "height":700,
-    "mobile":false
-    },
+    "url": "https://crossy-road.retrospicer.repl.co/",
+    "width": 900,
+    "height": 900,
+    "mobile": false
+  },
   "Super Mario": {
     "name": "Super Mario",
     "service": "offline",
     "premium": false,
-    "mobile":false
+    "mobile": false
   },
   "Slither-io": {
     "name": "Slither-io",
     "service": "custom",
     "url": "https://alloypro-xy.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
-    "width":900,
-    "height":700,
-    "mobile":false,
-    "premium":false
+    "width": 900,
+    "height": 700,
+    "mobile": false,
+    "premium": false
   },
-    "Paper-io": {
+  "Paper-io": {
     "name": "Paper-io",
     "service": "custom",
     "url": "https://apwebsurf.herokuapp.com/web/_aHR0cHM6Ly9wYXBlci1pby5jb20=_/",
-    "width":900,
-    "height":700,
-    "mobile":false,
-    "premium":false
+    "width": 900,
+    "height": 700,
+    "mobile": false,
+    "premium": false
   },
-
-    "Vex 4": {
+  "Run 3": {
+    "name": "Run 3",
+    "service": "custom",
+    "url": "https://player03.com/run/3/beta/",
+    "width": 880,
+    "height": 660,
+    "mobile": false,
+    "premium": false
+  },
+  "Vex 4": {
     "name": "Vex 4",
     "service": "custom",
     "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbQ==_/rvvASMiM/80e6a5ae477f4d4fbcd1ea293d10087d/%3Fgd_zone_config%3DeyJwYXJlbnRVUkwiOiJodHRwczovL2tpemkuY29tLyIsInBhcmVudERvbWFpbiI6ImtpemkuY29tIiwidG9wRG9tYWluIjoia2l6aS5jb20iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS4yLjgifQ%253D%253D",
-    "width":900,
-    "height":700,
-    "mobile":false,
-    "premium":false
+    "width": 900,
+    "height": 700,
+    "mobile": false,
+    "premium": false
   },
-
   "Jetpack Joyride": {
     "name": "Jetpack Joyride",
     "service": "html5-games",
-    "mobile":false,
-    "premium":false
+    "mobile": false,
+    "premium": false
+  },
+  "Zombs Royale": {
+    "name": "Zombs Royale",
+    "service": "custom",
+    "url": "https://zebrapro.herokuapp.com/web/_aHR0cHM6Ly96b21ic3JveWFsZS5pbw==_/",
+    "width": 900,
+    "height": 900,
+    "mobile": false,
+    "premium": false
   }
 }

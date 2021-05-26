@@ -191,18 +191,16 @@ if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
     if(event.origin == "https://www.irom.ga") {
       if(event.data["pin"] && event.data["pin"] != "none") {
         localStorage.pin = event.data["pin"];
-        var x = document.getElementsByClassName("login");
-        for(i=0;i<x.length;i++) {
-          x[i].style.display = "none";
-        }
+        document.getElementById("login").style.display = "none";
+        window.loggedOut = false;
         track();
         window.focus();
         loaded();
       } else if(event.data["pin"] && event.data["pin"] == "none") {
-        var x = document.getElementsByClassName("login");
-        for(i=0;i<x.length;i++) {
-          x[i].style.display = "block";
-        }
+        window.loggedOut = function(){
+          document.getElementById("login").style.display = "block";
+          document.body.style.overflow="hidden";
+        };
         loaded();
       }
     }

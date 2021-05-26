@@ -12,50 +12,39 @@
   </head>
   <body style="overflow:hidden;">
     <!-- Stuff for login & loading -->
-    <span class="login">
+    <span id="login" style="padding:10px;">
       <img class="rotate small" src="/media/icon.png"/>
-      <h1 class="small">Zatoga <span class="stable basic online">v4.0</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br>
-      <h3 class="small">Please log in to continue to Zatoga.</h3><br><br>
-      <a onclick="window.open('https://www.irom.ga/login?app=' + location.host)">Log in/Sign up</a>
+      <h1 class="small">Zatoga <span class="stable basic online">v4.5</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br><br>
+      <h3 class="small center">Please log in to play games on Zatoga!</h3>
+      <p>Fake emails or names will be banned within 24hrs</p>
+      <a style="position: absolute;bottom:50px;left:5%;width:90%;" onclick="window.open('https://www.irom.ga/login?app=' + location.host)">Log in/Sign up</a>
     </span>
     <span class="loading">
-      <h1 class="center">Zatoga <span class="stable basic online">v4.0</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br><br><br>
+      <h1 class="center">Zatoga <span class="stable basic online">v4.5</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br><br><br>
       <img class="rotate fast center" src="/media/icon.png"/>
       <br><br><br><br><br><br>
       <h2 class="center">Loading...</h3>
     </span>
     <!-- Zatoga header -->
     <img class="rotate small" src="/media/icon.png"/>
-    <h1 class="small">Zatoga <span class="stable basic online">v4.0</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline </span><span class="beta hide">BETA</span></h1>
+    <h1 class="small">Zatoga <span class="stable basic online">v4.5</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline </span><span class="beta hide">BETA</span></h1>
     <!-- Center buttons -->
     <center style="background-color: #333;width:100%;display:block;border-radius:10px;margin-top:5px;">
       <a class="mini gray" href='/app/info.html'>Info</a>
       <a class="mini gray" href='/app/premium'>Premium Apps</a>
-    <a class="mini gray share"><svg><use href="#share-icon"></use></svg>Share</a> <svg style="display:none;">
-      <defs>
-        <symbol id="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></symbol>
-      </defs>
-    </svg>
       <a class="mini gray" href='/app/logout.html'>Logout</a>
     </center><br>
     <!-- Message & text -->
     <h3 class="small" id="message"></h3><br><br>
     <input placeholder="Search for a game..." type="text" style="width:100%;font-size:18pt;background-color:#000;color:white;outline:0;border:none;position:sticky;top:0;z-index:1;padding:4px;box-sizing:inline-box;" autofocus id="searchBox"/><br><br>
-    <span class="online basic hide xd" style"background-color:#000;color:white;" href='/app/premium'>Get access to all the games by getting Premium</span>
-   <!-- THIS (ZOMBS ROYALE) NEEDS TO BE HERE - IT WONT WORK IN GAMES.JSON!!!!! -->
-   <a href="zombsroyale.html">▶️️️ Zombs Royale (BETA)</a><br>
+    <span style="color:white;" class="online basic hide">Get access to all the games by getting Premium</span>
     <span id="completeCollection"></span>
-<a href="http://alloypro-xy.herokuapp.com/web/_aHR0cHM6Ly9zdGlja21hbmhvb2suaW8=_/stickman-hook.embed" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=382,height=900 target=_blank'); return false;" target="_blank">▶️️️ Stickman Hook</a><br>
-
+    <!-- KEEP THIS HERE 
+    <a href="http://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9zdGlja21hbmhvb2suaW8=_/stickman-hook.embed" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=382,height=900 target=_blank'); return false;" target="_blank">▶️️️ Stickman Hook</a><br>-->
     <span id="Game-Not-Found" style="text-align:center;color:white;display:none;"><b>No Games Found.</b><br><p>Please search again...</p></span>
-<script src="/media/app.js"></script>
-<style>
-  .xd {
-    color: white;
-  }
-  </style>
-   <script> 
-       async function loadGames(){
+    <script src="/media/app.js"></script>
+    <script> 
+      async function loadGames(){
         // Game Curation (from games.json)
         let games = await fetch("/app/games.json");
         games = await games.json();
@@ -68,17 +57,25 @@
         function addGame(game) {
           // Clean up variables
           if(!game["url"])game["url"]=""
-          if(!game["url"])game["width"]=""
-          if(!game["url"])game["height"]=""
+          if(!game["width"]) {
+            game["width"]=""
+          } else {
+            game["width"] = "&width=" + game["width"]
+          }
+          if(!game["height"]) {
+            game["height"]=""
+          } else {
+            game["height"] = "&height=" + game["height"]
+          }
           let gameString = game["name"].toLowerCase().replace(/ /g, "-");
           // Add html for link to variable
           if(game["service"] == "offline") {
-            gameElems += "<span class='game'><a style='background-color:seagreen;color:white;' href='/app/games/offline/" + gameString + "/'>▶️️️ " + game["name"] + "</a><br></span>"; 
+            gameElems += "<span class='game'><a onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/offline/" + gameString + "/`'>▶️️️ " + game["name"] + "</a><br></span>"; 
           } else if(game["premium"]) {
             latestGameCount++;
-            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' style='color:white;background-color:seagreen;' onclick='if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + "&width=" + game["width"] + "&height=" + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
+            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' style='color:white;background-color:seagreen;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
           } else {
-            gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' style='color:white;background-color:seagreen;' onclick='if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + "&width=" + game["width"] + "&height=" + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
+            gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' style='color:white;background-color:seagreen;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
           }
         }
         latestGameCount = 0;
@@ -119,6 +116,7 @@
           document.getElementById("Game-Not-Found").style.display = "none";
         }
       }
+      document.getElementById("Game-Not-Found").style.display = "none";
       document.getElementById("searchBox").onkeyup = sortGames;
     </script>
     <script>

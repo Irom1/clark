@@ -1,15 +1,14 @@
 importScripts('https://arc.io/arc-sw-core.js');
 
-var version = 4.38;
+var version = 4.56;
 
-const staticZatoga = "zatoga-app-v2";
+const staticZatoga = "zatoga-v4";
 const assets = [
   "/",
   "/404.html",
   "/app/",
   "/app/info.html",
   "/app/logout.html",
-  "/app/zombsroyale.html",
   "/app/blocked.html",
   "/media/style.css",
   "/media/app.js",
@@ -20,7 +19,6 @@ const assets = [
   "/favicon.ico",
   "/app/premium/",
   "/app/premium/view.html",
-  "/app/games/offline/",
   "/app/games/offline/minecraft-js/",
   "/app/games/offline/doodle-jump/",
   "/app/games/offline/doodle-jump/background.png",

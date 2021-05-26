@@ -126,7 +126,7 @@ img.center {
 .offline {
   color: yellow;
 }
-.login {
+#login {
   display: none;
 }
 .shaddow {
@@ -147,7 +147,7 @@ a.share svg {
   display: inline-block;
   width: 25px;
 }
-.login, .loading {
+#login, .loading {
   width:100%;
   height:100%;
   position: fixed;
