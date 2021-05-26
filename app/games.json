@@ -21,6 +21,11 @@
     "premium": false,
     "mobile": true
   },
+    "Blob Tank Wars": {
+    "name": "Blob Tank Wars",
+    "service": "html5-games",
+    "premium": false
+  },
   "Chrome Dino": {
     "name": "Chrome Dino",
     "service": "offline",
@@ -32,6 +37,11 @@
     "service": "html5-games",
     "premium": false,
     "mobile": true
+  },
+    "Fireboy and Watergirl 5": {
+    "name": "Fireboy and Watergirl 5",
+    "service": "html5-games",
+    "premium": false
   },
   "Bouncing Balls": {
     "name": "Bouncing Balls",
