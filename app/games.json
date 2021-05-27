@@ -4,6 +4,12 @@
     "service": "offline",
     "premium": false
   },
+    "Helifight": {
+    "name": "Helifight",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
   "Stickman-Fighter: Epic Battle": {
     "name": "Stickman-Fighter: Epic Battle",
     "service": "html5-games",
@@ -178,7 +184,7 @@
   "Slither-io": {
     "name": "Slither-io",
     "service": "custom",
-    "url": "https://alloypro-xy.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
+    "url": "https://zebrapro.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
     "width": 900,
     "height": 700,
     "mobile": false,
@@ -225,12 +231,6 @@
     "height": 900,
     "mobile": false,
     "premium": false
-  },
-  "Helifight": {
-    "name": "Helifight",
-    "service": "html5-games",
-    "premium": false,
-    "mobile": false
   },
   "Bob The Robber": {
     "name": "Bob The Robber",
