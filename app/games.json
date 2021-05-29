@@ -11,7 +11,8 @@
   "Doodle Jump": {
     "name": "Doodle Jump",
     "service": "offline",
-    "premium": false
+    "premium": false,
+    "mobile": true
   },
     "The House": {
     "name": "The House",
@@ -43,7 +44,8 @@
   "Rider Online": {
     "name": "Rider Online",
     "service": "html5-games",
-    "premium": false
+    "premium": false,
+    "mobile": true
   },
   "Ninja Master": {
     "name": "Ninja Master",
@@ -103,7 +105,8 @@
   "2048 Game": {
     "name": "2048 Game",
     "service": "offline",
-    "premium": false
+    "premium": false,
+    "mobile": true
   },
   "MotoX3M": {
     "name": "MotoX3M",
@@ -131,10 +134,24 @@
     "service": "html5-games",
     "premium": false
   },
+    "Tug The Table": {
+    "name": "Tug The Table",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
+   "Wings Rush": {
+    "name": "Wings Rush",
+    "service": "html5-games",
+    "premium": true,
+    "mobile": false
+  },
   "Candy Crush": {
     "name": "Candy Crush",
     "service": "html5-games",
-    "premium": false
+    "premium": false,
+    "mobile": true
+
   },
   "Master Chess": {
     "name": "Master Chess",
@@ -144,7 +161,9 @@
     "Color Switch": {
     "name": "Color Switch",
     "service": "html5-games",
-    "premium": true
+    "premium": true,
+    "mobile": true
+
   },
   "8 ball pool": {
     "name": "8 ball pool",
@@ -155,7 +174,8 @@
     "name": "Super Bowmasters",
     "service": "html5-games",
     "premium": false,
-    "mobile": false
+    "mobile": true
+
   },
   "Surviv-io": {
     "name": "Surviv-io",
@@ -293,6 +313,12 @@
   },
     "Vex 5": {
     "name": "Vex 5",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
+    "Awesome Tanks 2": {
+    "name": "Awesome Tanks 2",
     "service": "html5-games",
     "premium": false,
     "mobile": false
