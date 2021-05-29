@@ -195,6 +195,12 @@
     "premium": true,
     "mobile": false
   },
+  "Tank Struggle": {
+    "name": "Tank Struggle",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
   "Slope": {
     "name": "Slope",
     "service": "y8",
@@ -299,5 +305,11 @@
     "height": 900,
     "mobile": false,
     "premium": false
+  },
+    "Road of Rampage": {
+    "name": "Road of Rampage",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
   }
 }
