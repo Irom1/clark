@@ -110,14 +110,20 @@
     "service": "html5-games",
     "premium": false
   },
+    "Moto X3M Winter": {
+    "name": "Moto X3M Winter",
+    "service": "html5-games",
+    "premium": true
+  },
   "Yahtzee": {
     "name": "Yahtzee",
     "service": "html5-games",
     "premium": false
   },
-  "Moto X3M Winter": {
-    "name": "Moto X3M Winter",
+  "Moto X3M Pool Party": {
+    "name": "Moto X3M Pool Party",
     "service": "html5-games",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/moto-xm-pool-party/",
     "premium": true
   },
   "Tank Defender": {
@@ -134,6 +140,11 @@
     "name": "Master Chess",
     "service": "html5-games",
     "premium": false
+  },
+    "Color Switch": {
+    "name": "Color Switch",
+    "service": "html5-games",
+    "premium": true
   },
   "8 ball pool": {
     "name": "8 ball pool",
@@ -173,7 +184,7 @@
   "Ballistic": {
     "name": "Ballistic",
     "service": "html5-games",
-    "premium": false,
+    "premium": true,
     "mobile": true,
     "width": 450,
     "height": 730
@@ -265,10 +276,19 @@
     "premium": false,
     "mobile": false
   },
-  "Vex 5": {
+  "Penalty Kick Online": {
+    "name": "Penalty Kick Online",
+    "service": "custom",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/penalty-kick-online/",
+    "width": 900,
+    "height": 470,
+    "mobile": false,
+    "premium": false
+  },
+    "Vex 5": {
     "name": "Vex 5",
     "service": "html5-games",
-    "premium": true,
+    "premium": false,
     "mobile": false
   },
     "xx142-b2.exe": {
