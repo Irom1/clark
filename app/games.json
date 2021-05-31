@@ -12,9 +12,9 @@
     "name": "Doodle Jump",
     "service": "offline",
     "premium": false,
-    "mobile": true
+    "mobile": false
   },
-    "The House": {
+  "The House": {
     "name": "The House",
     "service": "custom",
     "premium": false,
@@ -23,13 +23,13 @@
     "height": 900,
     "mobile": false
   },
-    "Helifight": {
+  "Helifight": {
     "name": "Helifight",
     "service": "html5-games",
     "premium": false,
     "mobile": false
   },
-    "Stickman-Fighter: Epic Battle": {
+  "Stickman-Fighter: Epic Battle": {
     "name": "Stickman-Fighter: Epic Battle",
     "service": "html5-games",
     "url": "https://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/stickman-fighter-epic-battle/",
@@ -53,7 +53,7 @@
     "premium": false,
     "mobile": true
   },
-    "Flappy Bird": {
+  "Flappy Bird": {
     "name": "Flappy Bird",
     "service": "custom",
     "premium": false,
@@ -100,7 +100,8 @@
   "Swipe Basketball": {
     "name": "Swipe Basketball",
     "service": "html5-games",
-    "premium": false
+    "premium": false,
+    "mobile":true
   },
   "2048 Game": {
     "name": "2048 Game",
@@ -113,7 +114,7 @@
     "service": "html5-games",
     "premium": false
   },
-    "Moto X3M Winter": {
+  "Moto X3M Winter": {
     "name": "Moto X3M Winter",
     "service": "html5-games",
     "premium": true
@@ -134,13 +135,13 @@
     "service": "html5-games",
     "premium": false
   },
-    "Tug The Table": {
+  "Tug The Table": {
     "name": "Tug The Table",
     "service": "html5-games",
     "premium": false,
     "mobile": false
   },
-   "Wings Rush": {
+  "Wings Rush": {
     "name": "Wings Rush",
     "service": "html5-games",
     "premium": true,
@@ -151,19 +152,17 @@
     "service": "html5-games",
     "premium": false,
     "mobile": true
-
   },
   "Master Chess": {
     "name": "Master Chess",
     "service": "html5-games",
     "premium": false
   },
-    "Color Switch": {
+  "Color Switch": {
     "name": "Color Switch",
     "service": "html5-games",
     "premium": true,
     "mobile": true
-
   },
   "8 ball pool": {
     "name": "8 ball pool",
@@ -175,7 +174,6 @@
     "service": "html5-games",
     "premium": false,
     "mobile": true
-
   },
   "Surviv-io": {
     "name": "Surviv-io",
@@ -311,19 +309,19 @@
     "mobile": false,
     "premium": false
   },
-    "Vex 5": {
+  "Vex 5": {
     "name": "Vex 5",
     "service": "html5-games",
     "premium": false,
     "mobile": false
   },
-    "Awesome Tanks 2": {
+  "Awesome Tanks 2": {
     "name": "Awesome Tanks 2",
     "service": "html5-games",
     "premium": false,
     "mobile": false
   },
-    "xx142-b2.exe": {
+  "xx142-b2.exe": {
     "name": "xx142-b2.exe",
     "service": "custom",
     "url": "https://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/xx142-b2exe/",
@@ -332,7 +330,7 @@
     "mobile": false,
     "premium": false
   },
-    "Road of Rampage": {
+  "Road of Rampage": {
     "name": "Road of Rampage",
     "service": "html5-games",
     "premium": false,
