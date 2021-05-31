@@ -1,10 +1,16 @@
-
 // Know if in the app
 var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 var onApp = (location.pathname == "/app/" || location.pathname == "/app/list.html");
 var beta = (location.host == "zatoga.irom1.repl.co");
 let stable = !beta;
 
+// Add ARC to webpages that are online
+if(navigator.onLine) {
+  let arcScript = document.createElement("script");
+  arcScript.async = true;
+  arcScript.src = "https://arc.io/widget.min.js#Rpa8mxM6";
+  document.body.appendChild(arcScript);
+}
 
 // this event will only fire if the user does not have the pwa installed
 window.addEventListener('beforeinstallprompt', (event) => {
