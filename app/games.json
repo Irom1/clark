@@ -101,7 +101,7 @@
     "name": "Swipe Basketball",
     "service": "html5-games",
     "premium": false,
-    "mobile":true
+    "mobile": true
   },
   "2048 Game": {
     "name": "2048 Game",
@@ -332,6 +332,12 @@
   },
   "Road of Rampage": {
     "name": "Road of Rampage",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
+  "Sudoku": {
+    "name": "Sudoku",
     "service": "html5-games",
     "premium": false,
     "mobile": false
