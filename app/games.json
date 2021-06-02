@@ -345,7 +345,14 @@
   "Narwhale.io": {
     "name": "Narwhale.io",
     "service": "custom",
-    "url": "https://zatogo.herokuapp.com/web/_aHR0cDovL25hcndoYWxlLmlv_/",
+    "url": "https://zappr.herokuapp.com/web/_aHR0cDovL25hcndoYWxlLmlv_/",
+    "premium": false,
+    "mobile": false
+  },
+    "Slush.io": {
+    "name": "Slush.io (Multiplayer/Single Player - BETA)",
+    "service": "custom",
+    "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly9zbHVzaC5pbw==_/",
     "premium": false,
     "mobile": false
   }
