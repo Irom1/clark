@@ -341,5 +341,12 @@
     "service": "html5-games",
     "premium": false,
     "mobile": false
+  },
+  "Narwhale.io": {
+    "name": "Narwhale.io",
+    "service": "custom",
+    "url": "https://zatogo.herokuapp.com/web/_aHR0cDovL25hcndoYWxlLmlv_/",
+    "premium": false,
+    "mobile": false
   }
 }
