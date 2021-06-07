@@ -2,9 +2,9 @@ if(navigator.onLine) {
   importScripts('https://arc.io/arc-sw-core.js');
 }
 
-var version = 4.999;
+var version = 4.500;
 
-const staticZatoga = "zatoga-v4";
+const staticZatoga = "zatoga-v5";
 const assets = [
   "/",
   "/404.html",

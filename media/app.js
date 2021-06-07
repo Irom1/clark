@@ -118,9 +118,8 @@ if(onApp) {
     "You know it's time to play fun games...",
     "Why do work when you can play?",
     "Play all the latest games unblocked!",
-    "It's the easiest way to have fun!",
-    "Zatoga v5.0 is coming soon!"
-  ];
+    "It's the easiest way to have fun!"
+    ];
   var message = document.getElementById("message");
   message.innerText = messages[Math.floor(Math.random() * messages.length)];
 }

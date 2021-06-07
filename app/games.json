@@ -8,6 +8,13 @@
     "mobile": false,
     "premium": false
   },
+  "Rob The Bank": {
+    "name": "Rob The Bank",
+    "service": "custom",
+    "url": "https://money-game-jam--caialexander2914.repl.co/",
+    "premium": false,
+    "mobile": false
+  },
   "Doodle Jump": {
     "name": "Doodle Jump",
     "service": "offline",
@@ -356,10 +363,9 @@
     "premium": false,
     "mobile": false
   },
-    "Rob The Bank": {
-    "name": "Rob The Bank",
-    "service": "custom",
-    "url": "https://money-game-jam--caialexander2914.repl.co/",
+  "Dead Zed": {
+    "name": "Dead Zed",
+    "service": "html5-games",
     "premium": false,
     "mobile": false
   }
