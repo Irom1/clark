@@ -4,7 +4,7 @@ if(navigator.onLine) {
 
 var version = 4.500;
 
-const staticZatoga = "zatoga-v5";
+const staticZatoga = "zatoga-v4";
 const assets = [
   "/",
   "/404.html",
