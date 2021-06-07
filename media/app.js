@@ -116,7 +116,10 @@ if(onApp) {
     "Why don't you play some games now?",
     "Ready to get distracted...?",
     "You know it's time to play fun games...",
-    "Why do work when you can play?"
+    "Why do work when you can play?",
+    "Play all the latest games unblocked!",
+    "It's the easiest way to have fun!",
+    "Zatoga v5.0 is coming soon!"
   ];
   var message = document.getElementById("message");
   message.innerText = messages[Math.floor(Math.random() * messages.length)];
@@ -130,7 +133,7 @@ if(navigator.share) {
     x[i].addEventListener('click', event => {
       navigator.share({
         title: 'Zatoga',
-        text: 'Install the PWA on any device and play games and get distracted!',
+        text: 'Zatoga - Play all the latest games unblocked- it is the easiest way to have fun!',
         url: 'https://zato.ga/'
       }).then(() => {
         //console.log('Thanks for sharing!');
