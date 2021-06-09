@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zatoga - Feedback</title>
+    <link rel="stylesheet" href="/media/style.css"/>
+    <meta name="apple-mobile-web-app-status-bar" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+    <style>
+      form textarea, form input[type="text"] {
+      border: none;
+      padding: 10px;
+      height: 250px;
+      outline: none;
+      width: calc(100%);
+      background-color: #222222;
+      color: white;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-size: 12pt;
+    }
+    #gform {
+      display: none;
+    }
+    #loading, #complete {
+      box-sizing: border-box;
+      width: 100%;
+      height: 350px;
+      display: none;
+    }
+    #loading img, #complete img {
+      width: 100px;
+      margin-left: calc(50% - 50px);
+      position: relative;
+      top: 50%;
+      transform: translate(0, -50%)
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <img class="rotate small" src="/media/icon.png"/>
+    <h1 class="small">Zatoga - Feedback</span></h1>
+    <h3>Please let us know what we can do to make Zatoga better for everyone!</h2>
+    <!-- Form components -->
+    <iframe onload="if(window.submitted){done()}" src="about:blank" name="gform" id="gform"></iframe>
+    <div id="loading"><img src="/media/loading.gif"></img></div>
+    <div id="complete">
+      <img src="/media/Green_Check_Circle.png"></img>
+      <center>Thank you for your feedback!</center>
+    </div>
+    <!-- Actual form -->
+    <form onsubmit="feedback()" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjwhh1D9g15UaeLUsF2W4URKMhWvCZJk8wMmDiNku_fGKVQQ/formResponse" target="gform">
+      <input type="hidden" name="entry.395425828" value="937"/>
+      <input type="hidden" name="entry.770249439" id="user"/>
+      <label>What type of feedback?</label>
+      <select name="entry.1594491525" required>
+        <option value="game">Game Suggustion</option>
+        <option value="feature">Feature Request</option>
+        <option value="bug">Bug Fix</option>
+      </select><br><br>
+      <textarea name="entry.892882407" id="feedback" placeholder="Write feedback here..." required></textarea><br><br>
+      <a onclick="feedback();return false;">Give Feedback</a>
+    </form>
+    <br>
+    <a href="/app/" class="home">Go back home</a><br>
+    <center><span>&copy; 2021 Zatoga</span></center>
+    <script src="/media/app.js"></script>
+    <script>
+      resize(422, 539);
+    </script>
+    <script>
+      function feedback() {
+        if (document.getElementById("feedback").value && confirm('Is this helpful feedback? If not we will block your account.')) {
+          document.getElementsByTagName('form')[0].submit();
+          document.getElementById("loading").style.display = "block";
+          document.getElementsByTagName("form")[0].style.display = "none";
+          window.submitted = true;
+        } else {
+          alert("Enter good feedback before submitting.");
+          document.getElementById("feedback").focus();
+        }
+      }
+      function done() {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("complete").style.display = "block";
+      }
+      window.submitted = false;
+      document.getElementById("user").value = localStorage.pin;
+    </script>
+  </body>
+</html>

@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <link rel="canonical" href="https://zato.ga" />
-    <meta name="google-site-verification" content="PZv08bOVx75U4dujL1qFX5LlkuLvAaXRW_ae-KaWocc" />
     <meta name="target" content="all"/>
     <meta name="audience" content="all"/>
     <meta name="coverage" content="Worldwide"/>
@@ -16,22 +15,6 @@
     <meta name="identifier-URL" content="https://zato.ga">
     <meta name="keywords" content="Zatoga, Zato, Zatog, ga, Games, Unblocked, Funblocked, 12345678910Zatogames"/>
     <title>Zatoga - The easiest way to have fun!</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQD9T41Z8Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JQD9T41Z8Y');
-</script>
-    <!-- Clarity tracking code for https://zato.ga/ --><script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "70s9vl3iv4");
-</script>
     <meta name="apple-mobile-web-app-status-bar" content="#000000" />
     <meta name="theme-color" content="#000000" />
   </head>
@@ -56,7 +39,8 @@
     <!-- Center buttons -->
     <center style="background-color: #333;width:100%;display:block;border-radius:10px;margin-top:5px;">
       <a class="mini gray" href='/app/info.html'>Info</a>
-      <a class="mini gray" href='/app/premium/'>Premium Services</a>
+      <a class="mini gray" href='/app/feedback.html'>Feedback</a>
+      <a class="mini gray" href='/app/premium/'>Premium</a>
       <a class="mini gray" href='/app/logout.html'>Logout</a>
     </center><br>
     <!-- Message & text -->
@@ -64,14 +48,11 @@
     <input placeholder="Search for a game..." type="text" style="width:100%;font-size:18pt;background-color:#000;color:white;outline:0;border:none;position:sticky;top:0;z-index:1;padding:4px;box-sizing:inline-box;" autofocus id="searchBox"/><br><br>
     <span style="color:white;" class="online basic hide"><b>Get access to play <cite>all the games</cite> with <button class="button" type="button" onclick="location.href='/app/premium/';" required="required">Premium</button></b></span>
     <span id="completeCollection"></span>
-        <!-- Responses to game suggestions at https://docs.google.com/spreadsheets/d/1nbT-z3TPt-89Y_3b25nRtpUuVonFSNxjAcVMkV2NyPI/edit?usp=sharing -->
-      <a href="/app/games/online.html?width=550&height=700&url=https://docs.google.com/forms/d/e/1FAIpQLSf0UMKdT0MGYVz4FpiE5ZzoaYG3TCnz50lDK_DzM7IfKVx7lg/viewform?embedded=true">Suggest A Game for Zatoga</a>
-    <!-- KEEP THIS HERE 
-    <a href="http://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9zdGlja21hbmhvb2suaW8=_/stickman-hook.embed" onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=382,height=900 target=_blank'); return false;" target="_blank">▶️️️ Stickman Hook</a><br>-->
-    <span id="Game-Not-Found" style="text-align:center;color:white;display:none;"><br><b>No Games Found.</b><br><p>Please search again...</p></span><br>
-    <center>
-    <span>&#169; 2021 Zatoga</span>
-    </center>
+    <span id="Game-Not-Found" style="text-align:center;color:white;display:none;">
+      <b>No Games Found.</b><br>
+      <p>Please search again...</p>
+    </span><br>
+    <center><span>&copy; 2021 Zatoga</span></center>
     <script src="/media/app.js"></script>
     <script> 
       async function loadGames(){

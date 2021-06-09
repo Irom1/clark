@@ -2,14 +2,15 @@ if(navigator.onLine) {
   importScripts('https://arc.io/arc-sw-core.js');
 }
 
-var version = 4.507;
+var version = 5.100;
 
-const staticZatoga = "zatoga-v4";
-const assets = [
+let staticZatoga = "zatoga-v2";
+let assets = [
   "/",
   "/404.html",
   "/app/",
   "/app/info.html",
+  "/app/feedback.html",
   "/app/logout.html",
   "/app/blocked.html",
   "/media/style.css",
@@ -76,6 +77,11 @@ const assets = [
 ];
 
 self.addEventListener("install", installEvent => {
+  // Kill old caches
+  caches.keys().then(function(names) {
+    for (let name of names)
+      caches.delete(name);
+  });
   installEvent.waitUntil(
     caches.open(staticZatoga).then(cache => {
       cache.addAll(assets)

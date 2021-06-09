@@ -21,3 +21,5 @@ For any game to work offline:
 --> Push commit in replit
 
 Stickman Hook: http://theduy.herokuapp.com/web/_aHR0cHM6Ly9zdGlja21hbmhvb2suaW8=_/stickman-hook.embed
+
+No pages should have ANY TRACKERs or GOOGLE IDENTIFICATION pages
