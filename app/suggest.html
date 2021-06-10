@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Zatoga - Feedback</title>
+    <title>Zatoga - Suggestions</title>
     <link rel="stylesheet" href="/media/style.css"/>
     <meta name="apple-mobile-web-app-status-bar" content="#000000" />
     <meta name="theme-color" content="#000000" />
@@ -37,27 +37,28 @@
       top: 50%;
       transform: translate(0, -50%)
     }
-    </style>
+</style>
   </head>
   <body>
     <!-- Header -->
     <img class="rotate small" src="/media/icon.png"/>
-    <h1 class="small">Zatoga - Feedback</span></h1>
-    <h3>Please let us know what we can do to make Zatoga better for everyone!</h2>
+    <h1 class="small">Zatoga - Suggestions</span></h1>
+    <h3>Please let us know what we can do to make Zatoga better for everyone!</h2><span>Select suggestion category from dropdown below.</span>
     <!-- Form components -->
     <iframe onload="if(window.submitted){done()}" src="about:blank" name="gform" id="gform"></iframe>
     <div id="loading"><img src="/media/loading.gif"></img></div>
     <div id="complete">
       <img src="/media/Green_Check_Circle.png"></img>
+      <br>
       <center>Thank you for your feedback!</center>
     </div>
     <!-- Actual form -->
     <form onsubmit="feedback()" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjwhh1D9g15UaeLUsF2W4URKMhWvCZJk8wMmDiNku_fGKVQQ/formResponse" target="gform">
       <input type="hidden" name="entry.395425828" value="937"/>
       <input type="hidden" name="entry.770249439" id="user"/>
-      <label>What type of feedback?</label>
+      <label>Select suggestion category:</label>
       <select name="entry.1594491525" required>
-        <option value="game">Game Suggustion</option>
+        <option value="game">Game Suggestion</option>
         <option value="feature">Feature Request</option>
         <option value="bug">Bug Fix</option>
       </select><br><br>
