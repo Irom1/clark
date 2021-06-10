@@ -2,7 +2,7 @@ if(navigator.onLine) {
   importScripts('https://arc.io/arc-sw-core.js');
 }
 
-var version = 5.102;
+var version = 5.103;
 
 let staticZatoga = "zatoga-v2";
 let assets = [
@@ -10,7 +10,7 @@ let assets = [
   "/404.html",
   "/app/",
   "/app/info.html",
-  "/app/feedback.html",
+  "/app/suggest.html",
   "/app/logout.html",
   "/app/blocked.html",
   "/media/style.css",
@@ -19,6 +19,7 @@ let assets = [
   "/media/icon.png",
   "/media/loading.gif",
   "/media/blocked.png",
+  "/media/Green_Check_Circle.png",
   "/favicon.ico",
   "/app/premium/",
   "/app/premium/view.html",
