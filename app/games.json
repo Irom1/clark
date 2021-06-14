@@ -195,8 +195,8 @@
     "premium": false,
     "mobile": true
   },
-  "Surviv-io": {
-    "name": "Surviv-io",
+  "Surviv.io": {
+    "name": "Surviv.io",
     "service": "custom",
     "premium": false,
     "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
@@ -258,19 +258,10 @@
     "premium": false,
     "mobile": false
   },
-  "Slither-io": {
-    "name": "Slither-io",
+  "Slither.io": {
+    "name": "Slither.io",
     "service": "custom",
     "url": "https://zappr.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
-    "width": 900,
-    "height": 700,
-    "mobile": false,
-    "premium": false
-  },
-  "Paper-io": {
-    "name": "Paper-io",
-    "service": "custom",
-    "url": "https://zatogo.herokuapp.com/web/_aHR0cHM6Ly9wYXBlci1pby5jb20=_/",
     "width": 900,
     "height": 700,
     "mobile": false,
@@ -365,14 +356,6 @@
     "premium": false,
     "mobile": false
   },
-  "Minecraft - Javascript Edition": {
-    "name": "Minecraft - Javascript Edition",
-    "service": "offline",
-    "width": 900,
-    "height": 700,
-    "mobile": false,
-    "premium": false
-  },
     "JustBuild.LOL": {
     "name": "JustBuild.LOL",
     "service": "custom",
@@ -391,6 +374,32 @@
     "mobile": false,
     "premium": false
   },
+    "Minecraft - Javascript Edition": {
+    "name": "Minecraft - Javascript Edition",
+    "service": "offline",
+    "width": 900,
+    "height": 700,
+    "mobile": false,
+    "premium": false
+  },
+    "Paper.io Animals": {
+    "name": "Paper.io Animals",
+    "service": "custom",
+    "url": "https://zatogo.herokuapp.com/web/_aHR0cHM6Ly9wYXBlcmFuaW1hbHMuaW8=_/",
+    "width": 900,
+    "height": 700,
+    "mobile": false,
+    "premium": false
+  },
+    "Paper.io": {
+    "name": "Paper.io",
+    "service": "custom",
+    "url": "https://zatogo.herokuapp.com/web/_aHR0cHM6Ly9wYXBlci1pby5jb20=_/",
+    "width": 900,
+    "height": 700,
+    "mobile": false,
+    "premium": false
+  },
     "Road of Rampage": {
     "name": "Road of Rampage",
     "service": "html5-games",
@@ -402,6 +411,13 @@
     "service": "html5-games",
     "premium": false,
     "mobile": false
+  },
+  "Subway Surfers": {
+    "name":"Subway Surfers",
+    "service":"custom",
+    "url":"https://theduy.herokuapp.com/web/_aHR0cHM6Ly9zemhvbmcuNDM5OS5jb20=_/4399swf/upload_swf/ftp35/liuxinyu/20210202/jj2/index.html",
+    "mobile":true,
+    "premium":false
   }
 }
 
