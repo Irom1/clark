@@ -2,7 +2,7 @@
   "Pac-Man": {
     "name": "Pac-Man",
     "service": "custom",
-    "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/pacman/",
+    "url": "https://zappor.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/pacman/",
     "width": 900,
     "height": 700,
     "mobile": false,
@@ -45,7 +45,7 @@
   "Stickman-Fighter: Epic Battle": {
     "name": "Stickman-Fighter: Epic Battle",
     "service": "html5-games",
-    "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/stickman-fighter-epic-battle/",
+    "url": "https://zappor.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/stickman-fighter-epic-battle/",
     "premium": false
   },
   "Circle Shooter": {
@@ -70,7 +70,7 @@
     "name": "Flappy Bird",
     "service": "custom",
     "premium": false,
-    "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/flappybird/",
+    "url": "https://zappor.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/flappybird/",
     "width": 500,
     "height": 900,
     "mobile": true
@@ -89,7 +89,7 @@
   "G-Switch 3": {
     "name": "G-Switch 3",
     "service": "html5-games",
-    "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/g-switch-3/",
+    "url": "https://zappor.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/g-switch-3/",
     "premium": false,
     "mobile": false
   },
@@ -206,7 +206,7 @@
     "name": "Surviv.io",
     "service": "custom",
     "premium": false,
-    "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
+    "url": "https://zappor.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
     "width": 900,
     "height": 900,
     "mobile": false
@@ -281,7 +281,7 @@
   "Slither.io": {
     "name": "Slither.io",
     "service": "custom",
-    "url": "https://zappr.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
+    "url": "https://zappor.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
     "width": 900,
     "height": 700,
     "mobile": false,
@@ -314,7 +314,7 @@
   "Zombs Royale": {
     "name": "Zombs Royale",
     "service": "custom",
-    "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly96b21ic3JveWFsZS5pbw==_/",
+    "url": "https://zappor.herokuapp.com/web/_aHR0cHM6Ly96b21ic3JveWFsZS5pbw==_/",
     "width": 900,
     "height": 900,
     "mobile": false,
@@ -350,7 +350,7 @@
   "xx142-b2.exe": {
     "name": "xx142-b2.exe",
     "service": "custom",
-    "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/xx142-b2exe/",
+    "url": "https://zappor.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/xx142-b2exe/",
     "width": 900,
     "height": 900,
     "mobile": false,
@@ -365,7 +365,7 @@
   "Narwhale.io": {
     "name": "Narwhale.io",
     "service": "custom",
-    "url": "https://zappr.herokuapp.com/web/_aHR0cDovL25hcndoYWxlLmlv_/",
+    "url": "https://zappor.herokuapp.com/web/_aHR0cDovL25hcndoYWxlLmlv_/",
     "premium": false,
     "mobile": false
   },
@@ -409,7 +409,7 @@
    "1v1.LOL": {
     "name": "1v1.LOL",
     "service": "custom",
-    "url":"https://zappr.herokuapp.com/web/_aHR0cHM6Ly8xdjEubG9s_/",
+    "url":"https://zappor.herokuapp.com/web/_aHR0cHM6Ly8xdjEubG9s_/",
     "width": 900,
     "height": 900,
     "mobile": false,
