@@ -8,6 +8,13 @@
     "mobile": false,
     "premium": false
   },
+    "Stick Merge": {
+    "name": "Stick Merge",
+    "service": "custom",
+    "url": "http://theduy.herokuapp.com/web/_aHR0cHM6Ly9nYW1lczIuc3RhcnRnYW1lci5ydQ==_/stick_merge/",
+    "mobile": false,
+    "premium": false
+  },
   "Rob The Bank": {
     "name": "Rob The Bank",
     "service": "custom",
@@ -292,6 +299,13 @@
     "premium": false,
     "mobile": false
   },
+    "Lone Wolf Strike": {
+    "name": "Lone Wolf Strike",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/xlv6xmnkfwj27yes8ly9t73icin4dmda/",
+    "premium": false,
+    "mobile": false
+  },
     "Dune Buggy - Battle Royale": {
     "name": "Dune Buggy - Battle Royale",
     "service": "custom",
@@ -306,6 +320,13 @@
     "premium": false,
     "mobile": false
   },
+    "Sniper Game": {
+    "name": "Sniper Game",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/m5x88vcb8btc9cks8m26oi7wh6hg2klp/",
+    "premium": false,
+    "mobile": false
+  },
   "Slither.io": {
     "name": "Slither.io",
     "service": "custom",
@@ -314,6 +335,13 @@
     "height": 700,
     "mobile": false,
     "premium": false
+  },
+    "Police Chase": {
+    "name": "Police Chase",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/9c5voozfp7a4er5xv2vldjoaul5gd0pm/",
+    "premium": false,
+    "mobile": false
   },
   "Run 3": {
     "name": "Run 3",
@@ -332,6 +360,13 @@
     "height": 700,
     "mobile": false,
     "premium": false
+  },
+    "Arena Wars": {
+    "name": "Arena Wars",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/dylbqp715wpqev18kprel6j4d8zwvy49/",
+    "premium": false,
+    "mobile": false
   },
   "Jetpack Joyride": {
     "name": "Jetpack Joyride",
@@ -442,6 +477,13 @@
     "height": 900,
     "mobile": false,
     "premium": false
+  },
+    "Among-io": {
+    "name": "Among-io",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/uxwe2obt5qsyi2uwpr3xi3d9lmfxjsmd/",
+    "premium": false,
+    "mobile": false
   },
     "Minecraft - Javascript Edition": {
     "name": "Minecraft - Javascript Edition",
