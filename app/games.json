@@ -8,13 +8,6 @@
     "mobile": false,
     "premium": false
   },
-    "Stick Merge": {
-    "name": "Stick Merge",
-    "service": "custom",
-    "url": "http://theduy.herokuapp.com/web/_aHR0cHM6Ly9nYW1lczIuc3RhcnRnYW1lci5ydQ==_/stick_merge/",
-    "mobile": false,
-    "premium": false
-  },
   "Rob The Bank": {
     "name": "Rob The Bank",
     "service": "custom",
@@ -206,6 +199,13 @@
     "service": "html5-games",
     "premium": false
   },
+    "Ski Challenge": {
+    "name": "Ski Challenge",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/jrfnsj2qfuheoxa4dvjwk16by3um9jys/",
+    "mobile": false,
+    "premium": false
+  },
   "Color Switch": {
     "name": "Color Switch",
     "service": "html5-games",
@@ -374,6 +374,13 @@
     "mobile": false,
     "premium": false
   },
+    "Outlive.AI": {
+    "name": "Outlive.AI",
+    "service": "custom",
+    "url": "http://theduy.herokuapp.com/web/_aHR0cHM6Ly9vdXRsaXZlLmFp_/",
+    "mobile": false,
+    "premium": false
+  },
   "Zombs Royale": {
     "name": "Zombs Royale",
     "service": "custom",
@@ -452,6 +459,15 @@
     "url": "https://w4tg.herokuapp.com/web/_aHR0cHM6Ly9kZWZseS5pbw==_/",
     "premium": false,
     "mobile": false
+  },
+    "Pou: Virtual Pet": {
+    "name": "Pou: Virtual Pet",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/jyeazqa0x7ym5xcq22g9mgv74s5tift1/",
+    "width": 500,
+    "height": 800,
+    "mobile": false,
+    "premium": false
   },
     "JustBuild.LOL": {
     "name": "JustBuild.LOL",
