@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="target" content="all"/>
-    <meta name="audience" content="all"/>
-    <meta name="coverage" content="Worldwide"/>
-    <meta name="distribution" content="Global">
-    <meta name="rating" content="safe for kids"/>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/media/style.css" />
-    <meta name="url" content="https://zato.ga">
-    <meta name="identifier-URL" content="https://zato.ga">
-    <meta name="keywords" content="Zatoga, Zato, Zatog, ga, Games, Unblocked, Funblocked"/>
-    <title>Zatoga - Play all the latest games unblocked and have fun!</title>
-    <meta name="description" content="Zatoga - Play all the latest games unblocked - it's the easiest way to have fun! - Only at Zato.ga (Zatoga)!">
 
-    <!-- Schema Markup (important for SEO) -->
-    <script type="application/ld+json">
-{
+<head>
+	<meta name="target" content="all" />
+	<meta name="audience" content="all" />
+	<meta name="coverage" content="Worldwide" />
+	<meta name="distribution" content="Global">
+	<meta name="rating" content="safe for kids" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="/media/style.css" />
+	<meta name="url" content="https://zato.ga">
+	<meta name="identifier-URL" content="https://zato.ga">
+	<meta name="keywords" content="Zatoga, Zato, Zatog, ga, Games, Unblocked, Funblocked" />
+	<title>Zatoga - Play all the latest games unblocked and have fun!</title>
+	<meta name="description" content="Zatoga - Play all the latest games unblocked - it's the easiest way to have fun! - Only at Zato.ga (Zatoga)!">
+
+	<!-- Schema Markup (important for SEO) -->
+	<script type="application/ld+json">
+		{
     "@context": "http://schema.org",
     "@type": "Organization",
     "@id": "https://www.zato.ga",
@@ -47,39 +48,45 @@
         }
     ]
 }
-</script>
+	</script>
 
-    <link rel="manifest" href="/app/manifest.json" />
-    <!-- ios support -->
-    <link rel="apple-touch-icon" href="/media/icon.png" />
-    <meta name="apple-mobile-web-app-status-bar" content="#000000" />
-    <meta name="theme-color" content="#000000" />
-  </head>
-  <body class="welcome">
+	<link rel="manifest" href="/app/manifest.json" />
+	<!-- ios support -->
+	<link rel="apple-touch-icon" href="/media/icon.png" />
+	<meta name="apple-mobile-web-app-status-bar" content="#000000" />
+	<meta name="theme-color" content="#000000" />
+</head>
 
-    <img class="rotate" src="/media/icon.png"/>
+<body class="welcome">
+
+	<img class="rotate" src="/media/icon.png"/>
     <h1>Welcome to Zatoga</h1>
     <h2>The easiest way to have fun! <small>(And more!)</small></h2>
-    <a onclick="window.installApp.prompt();" id="installApp" style="width:100%;max-width:750px;margin:auto;border:2px solid #1E90FF;">Add Zatoga</a>
+    <h2 style="text-align:left;width: 100%; max-width: 750px; margin: auto; display: block;">Install Offline</h2>
+    <a onclick="window.installApp.prompt();" id="installApp" style="width:100%;max-width:750px;margin:auto;">Install Browser WebApp</a>
     <div id="launchApp" style="width:100%;max-width:750px;margin:auto;">
-      <div style="background-color:red;border-radius:10px;padding: 2px;">
-        <h3>Install Information</h3>
-        <p>If you are in chrome please wait a few seconds for the install button to appear. If it doesn't appear try reloading the page.<br><br>
-        If that doesn't work or you are not using chrome, please use the links below for information on how to install Zatoga (Zato.ga).</p>
+      <div style="background-color:yellow;color:black;border-radius:10px;padding: 2px;">
+        <h3>Chrome Install Information</h3>
+        <p>If you are in desktop/android Chrome please wait a few seconds for the install button to appear. If it doesn't appear try reloading the page.
       </div><br>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Developer_guide/Installing#what_browsers_support_installation" target="_blank">How to install on a smartphone?</a><br>
-      <a href="https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=en&oco=1" target="_blank">How to install with Chrome Desktop?</a>
-    </div><br>
-    <div href="/app/" style="background-color:yellow;color:black;border-radius:10px;padding: 2px;width:100%;max-width:750px;margin:auto;">
-      <h3>Post-Install Information</h3>
-      <p>Once you have installed the app you have to open it from your app menu & the install button will not appear here!</p>
-    </div><br>
-    <span>Or</span><br><br>
-    <a href="/app/" style="width:100%;max-width:750px;margin:auto;border:2px solid #1E90FF;">Launch Zatoga Web</a>
+      <a id="ios" style="width:100%;max-width:750px;margin:auto;">Install on iOS (beta)</a>
+    </div>
+    <br>
+    <h2 style="text-align:left;width: 100%; max-width: 750px; margin: auto; display: block;">Launch from Browser</h2>
+    <a onclick="var zatogaWindow = window.open(location.href + `/app/`,`zatoga`,`width=430,height=545`);" style="width:100%;max-width:750px;margin:auto;">Launch Zatoga Web</a><br>
+    <a onclick="incognito()" style="width:100%;max-width:750px;margin:auto;">Launch Zatoga in Incognito Mode</a>
     <br>
     <center>
-    <span><a class="link" href="https://www.tamoghnak.tk">&copy; 2021 Zatoga</a></span>
+    <span>&copy; 2021 Zatoga</span>
     </center>
+    <script>
+      function incognito() {
+        let moveScript = `if(event.data["width"] && event.data["height"]){let width=event.data["width"];let height=event.data["height"];window.resizeTo(width + window.outerWidth - window.innerWidth, height + window.outerHeight - window.innerHeight);}`;
+        var zatogaWindow = window.open(``,`zatoga`,`width=430,height=545`);
+        zatogaWindow.document.write(`<style>body {margin: 0;}</style><title>Zatoga - Incognito Mode</title><iframe width='100%' height='100%' src='` + location.href + `app/' frameborder='0'></iframe><script>window.addEventListener("message", (event) => {` + moveScript + `}, false);</scr`+`ipt>`);
+        location.replace(`https://www.google.com/`);
+      }
+    </script>
     <script src="/media/app.js"></script>
   </body>
 </html>

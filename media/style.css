@@ -53,10 +53,10 @@ a.mini.gray:hover {
 a.home {
   background-color: coral;
 }
-a.disabled {
+/*a.disabled {
   cursor: not-allowed;
   opacity: 0.6;
-}
+}*/
 span.back {
   display: block;
   position: fixed;

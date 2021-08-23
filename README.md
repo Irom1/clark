@@ -23,6 +23,13 @@ The Progressive Web App is made by me but the games were not made by me. Game cr
 * https://github.com/ntcnet83/html5-doodle-jump
 * https://github.com/zhouchangxun/superMario
 * https://codepen.io/camsong/pen/wcKrg
-* https://codepen.io/v120/pen/eGdOLq <-- Sourced from Chromium Authors
-* https://html5-games.io/ &  <-- Where all proxied games come from
-*Games from https://holyubofficial.com*
+* https://codepen.io/v120/pen/eGdOLq <-- Sourced from Chromium
+## Game Sources
+* https://html5-games.io/
+* https://holyubofficial.com/
+* https://gamemontize.com/
+## Proxies Used
+* Alloy Proxy
+* Womginx
+* https://websurf.repl.co
+
