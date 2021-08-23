@@ -28,7 +28,17 @@ if ("serviceWorker" in navigator) {
       .then(function(registration) {
 		    registration.onupdatefound = function() {
           if(inApp) {
-            alert("Updating Zatoga...");
+    setTimeout(function() {
+        swal({
+            title: "Update Found!",
+            text: "An update has been found for Zatoga. Click the button below to update.",
+            type: "success",
+            button: "Update Zatoga",
+
+        }, function() {
+            window.location = "/app/";
+        });
+    }, 1000);
             location.reload();
           }
 		    }
@@ -263,17 +273,7 @@ if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
 
 
 document.body.onshortcut(["Alt", "r"], el => {
-      setTimeout(function() {
-        swal({
-            title: "Free Premium!",
-            text: "Rate Zatoga 5 Stars in Google Search by clicking OK below to have a chance at getting Zatoga Premium. However, if you rate Zatoga anything under 5 stars, you WILL be blocked & banned from Zatoga until you fix your rating. Click OK to be redirected to rate Zatoga and be patient...",
-            type: "success"
-        }, function() {
-            window.open(
-  'https://g.page/r/CU5AkZs-c-2wEBI/review',
-  '_blank');
-        });
-    }, 1000);
+  alert("Rate Zatoga 5 Stars in Google Search by clicking OK below to have a chance at getting Zatoga Premium. However, if you rate Zatoga anything under 5 stars, you WILL be blocked & banned from Zatoga until you fix your rating. Click OK to be redirected to rate Zatoga and be patient...");window.open( 'https://g.page/r/CU5AkZs-c-2wEBI/review','_blank');
 })
 
 

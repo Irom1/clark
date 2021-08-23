@@ -69,7 +69,7 @@
         <h3>Chrome Install Information</h3>
         <p>If you are in desktop/android Chrome please wait a few seconds for the install button to appear. If it doesn't appear try reloading the page.
       </div><br>
-      <a id="ios" style="width:100%;max-width:750px;margin:auto;">Install on iOS (beta)</a>
+      <a id="ios" style="width:100%;max-width:750px;margin:auto;" onclick="ios()">Install on iOS (beta)</a>
     </div>
     <br>
     <h2 style="text-align:left;width: 100%; max-width: 750px; margin: auto; display: block;">Launch from Browser</h2>
@@ -85,6 +85,14 @@
         var zatogaWindow = window.open(``,`zatoga`,`width=430,height=545`);
         zatogaWindow.document.write(`<style>body {margin: 0;}</style><title>Zatoga - Incognito Mode</title><iframe width='100%' height='100%' src='` + location.href + `app/' frameborder='0'></iframe><script>window.addEventListener("message", (event) => {` + moveScript + `}, false);</scr`+`ipt>`);
         location.replace(`https://www.google.com/`);
+      }
+
+      function ios() {
+        swal({
+  title: "iOS Installation",
+  text: "Go to Safari (browser) app and go to the registration page. Then, tap the share button, at the bottom of the screen (at the browser options). Then, click the 'Add to homescreen' button and hit the 'Done' button after. Now, go to your homescreen, and launch the newly added Zatoga app!",
+  button: "Ok",
+});
       }
     </script>
     <script src="/media/app.js"></script>
