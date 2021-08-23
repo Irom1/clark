@@ -54,6 +54,7 @@
     <span id="Game-Not-Found" style="text-align:center;color:white;display:none;">
       <b>No Games Found.</b><br>
       <p>Please search again...</p>
+      <small>Play more games with Premium!</small>
     </span><br>
     <center><span>&copy; 2021 Zatoga</span></center>
     <script src="/media/app.js"></script>
@@ -96,13 +97,13 @@
         for(var count=gameArray.length-1;count>=0;count--) {
           let game = games[gameArray[count]];
           if(!onMobile || game["mobile"]) {
-            if(latestGameCount < 1 ) {
+            if(latestGameCount < 0 ) {
               game["premium"] = true;
             }
             addGame(game);
           }
         }
-        // latestgamecount above- used to be 2, not 1.
+        // latestgamecount above- used to be 2, not 0.
         document.getElementById("completeCollection").innerHTML = gameElems;
         if(navigator.onLine) {
           x = document.getElementsByClassName("internet");
