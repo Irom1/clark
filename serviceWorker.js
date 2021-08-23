@@ -2,7 +2,7 @@ if(navigator.onLine) {
   importScripts('https://arc.io/arc-sw-core.js');
 }
 
-var version = 2.54;
+var version = 2.55;
 
 let staticZatoga = "zatoga-v2";
 let assets = [
