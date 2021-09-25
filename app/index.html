@@ -27,6 +27,7 @@
       <h3 class="small center">Please log in to play games on Zatoga!</h3>
       <p>Fake emails, fake names, <b>and school or work emails</b> will be banned within 24 hours</p>
       <p>We will <b>not</b> sell your personal information or sign you up for any email lists. Email is simply for verification.</p>
+      <a style="position: absolute;bottom:50px;left:5%;width:90%;" onclick="window.open('https://irom.netlify.app/login?app=' + location.host)">Play for 60s to test</a>
       <a style="position: absolute;bottom:50px;left:5%;width:90%;" onclick="window.open('https://irom.netlify.app/login?app=' + location.host)">Log in/Sign up</a>
     </span>
     <span class="loading">
@@ -41,14 +42,12 @@
     <!-- Center buttons -->
     <a title="info" class="miniright fa fa-info" href='/app/info.html'></a>
     <a title="feedback" class="miniright fa fa-comment-alt" href='/app/suggest.html'></a>
-    <a title="premium" class="miniright fa fa-user-plus" href='/app/premium/'></a>
     <a title="logout" class="miniright fa fa-sign-out-alt" href='/app/logout.html'></a>
     <!-- Message & text -->
     <input placeholder="Search for a game..." type="text" style="width:100%;font-size:18pt;background-color:#000;color:white;outline:0;border:none;position:sticky;top:0;z-index:1;padding:4px;box-sizing:inline-box;" autofocus id="searchBox"/><br><br>
     <h3 class="small" id="message"></h3><br><br>
     <span style="color:white;" class="online basic hide"><b>Get access to play <cite>all the games</cite> with <button class="button" onclick="location.href='/app/premium/';">Premium</button></b><br></span>
     <span id="completeCollection"></span>
-    <a href="https://SwagSchool.retrospicer.repl.co" target="_blank">Featured: SwagSchool</a>
     <span id="Game-Not-Found" style="text-align:center;color:white;display:none;">
       <b>No Games Found.</b><br>
       <p>Please search again...</p>

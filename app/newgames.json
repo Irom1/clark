@@ -1,0 +1,16 @@
+{
+  "proxys":[
+    "https://theduki.herokuapp.com/"
+  ],
+  "sources":[
+    "https://gamemonetize.com/rssfeed.php?format=json&category=All&type=html5&popularity=mostplayed&company=All&amount=100",
+  ],
+  "games":[
+    {
+      "name":"Moto x3m",
+      "proxy":true,
+      "url":"https://html5.gamemonetize.com/prgu410ix1mwhcwrhfrzd1v7sc9x34qs/"
+    },
+    {}
+  ]
+}

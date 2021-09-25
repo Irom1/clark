@@ -1,4 +1,4 @@
-if(navigator.onLine && false) {
+if(navigator.onLine && true) {
   importScripts('https://arc.io/arc-sw-core.js');
 }
 
@@ -6,8 +6,8 @@ var version = 2.76;
 
 let staticZatoga = "zatoga-v2";
 let assets = [
-  "/",
-  "/404.html",
+  /*"/",*/
+  "/404.html"/*,
   "/app/",
   "/app/info.html",
   "/app/suggest.html",
@@ -73,7 +73,7 @@ let assets = [
   "/app/games/offline/super-mario/Scripts/sounds_noop.js",
   "/app/games/offline/super-mario/Scripts/sounds.js",
   "/app/games/offline/super-mario/Scripts/testlevels.js",
-  "/app/games/online.html"
+  "/app/games/online.html"*/
 ];
 
 self.addEventListener("install", installEvent => {

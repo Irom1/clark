@@ -20,7 +20,7 @@
   }
 </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
 <iframe id="gameFrame" allowfullscreen></iframe>
 <span class="back top" onclick="window.location.href='/app/';"></span>
 <script src="/media/app.js"></script>
@@ -43,6 +43,34 @@ if(params.get("url")) {
     }
   })();
 }
+
+// preventers
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+function disableselect(e){  
+return false  
+}  
+
+function reEnable(){  
+return true  
+}  
+
+//if IE4+  
+document.onselectstart=new Function ("return false")  
+document.oncontextmenu=new Function ("return false")  
+//if NS6  
+if (window.sidebar){  
+document.onmousedown=disableselect  
+document.onclick=reEnable  
+}
+
+function prevententer () {
+ if(event.button == 2) {
+  return false;
+ }
+}
+
 </script>
 </body>
 </html>

@@ -53,7 +53,7 @@
       <center>Thank you for your feedback!</center>
     </div>
     <!-- Actual form -->
-    <form onsubmit="feedback()" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjwhh1D9g15UaeLUsF2W4URKMhWvCZJk8wMmDiNku_fGKVQQ/formResponse" target="gform">
+    <form onsubmit="window.feedback()" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjwhh1D9g15UaeLUsF2W4URKMhWvCZJk8wMmDiNku_fGKVQQ/formResponse" target="gform">
       <input type="hidden" name="entry.395425828" value="937"/>
       <input type="hidden" name="entry.770249439" id="user"/>
       <label>Select suggestion category:</label>
@@ -63,18 +63,16 @@
         <option value="bug">Bug Fix</option>
       </select><br><br>
       <textarea name="entry.892882407" id="feedback" placeholder="Write feedback here..." required></textarea><br><br>
-      <a onclick="feedback();return false;">Give Feedback</a>
+      <span><a onclick="window.feedback();">Give Feedback</a></span>
     </form>
-    <br>
-    <a href="/app/" class="home">Go back home</a><br>
-        <center><span style="color:#1E90FF;" onclick="window.location.href='/app/legal/terms-of-service.html'">Terms of Service</span>&nbsp;&bullet;&nbsp;<span style="color:#1E90FF;" onclick="window.location.href='/app/legal/privacy-policy.html'">Privacy Policy</span><br><span>&copy; 2021 Zatoga</span></center>
+    <span><a href="/app/" class="home">Go back home</a></span><br>
+    <center>&copy; 2021 Zatoga</center>
     <script src="/media/app.js"></script>
-    <script src="https://www.ls4.me/rating"></script>
     <script>
       resize(422, 539);
     </script>
     <script>
-      function feedback() {
+      window.feedback = function() {
         if (document.getElementById("feedback").value && confirm('Is this helpful feedback? If not we will block your account.')) {
           document.getElementsByTagName('form')[0].submit();
           document.getElementById("loading").style.display = "block";

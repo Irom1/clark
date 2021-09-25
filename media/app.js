@@ -126,7 +126,8 @@ if(onApp) {
     "You know it's time to play fun games...",
     "Why do work when you can play?",
     "Play all the latest games anywhere!",
-    "It's the easiest way to have fun!"
+    "It's the easiest way to have fun!",
+    "Made by students, made for students."
     ];
   var message = document.getElementById("message");
   message.innerText = messages[Math.floor(Math.random() * messages.length)];
@@ -223,4 +224,29 @@ if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
     }
   }
   window.addEventListener("message", receiveMessage, false);
+}
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+function disableselect(e){  
+return false  
+}  
+
+function reEnable(){  
+return true  
+}  
+
+//if IE4+  
+document.onselectstart=new Function ("return false")  
+document.oncontextmenu=new Function ("return false")  
+//if NS6  
+if (window.sidebar){  
+document.onmousedown=disableselect  
+document.onclick=reEnable  
+}
+
+function prevententer () {
+ if(event.button == 2) {
+  return false;
+ }
 }
